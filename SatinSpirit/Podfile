@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+
+target 'SatinSpirit (iOS)' do
+  platform :ios, '13.0'
+
+  # Pods for SatinSpirit (iOS)
+  pod 'Forge', :path => '../../Hi-Rez/Forge'
+  pod 'Satin', :path => '../../Hi-Rez/Satin'
+end
+
+target 'SatinSpirit (macOS)' do
+  platform :osx, '10.15'
+
+  # Pods for SatinSpirit (macOS)
+  pod 'Forge', :path => '../../Hi-Rez/Forge'
+  pod 'Satin', :path => '../../Hi-Rez/Satin'
+end
+
+

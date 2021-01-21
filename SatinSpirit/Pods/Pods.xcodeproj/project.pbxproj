@@ -1,0 +1,2137 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0069F13CADB7F137A087F914D4B2218B /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA154BDA6DCD808C439BF8B447D2FF /* Material.swift */; };
+		00748627AABA52A9EDA52125EBDF29A0 /* BufferComputeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD595E15C554FA0DEE44099C0E4E2DD6 /* BufferComputeSystem.swift */; };
+		01479C81737103779716F1F8BE8B50E6 /* CircleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997D7300693230A1F8D17AE3DF68E818 /* CircleGeometry.swift */; };
+		01888CA659ADB1AA8ED19A13B24E3BC2 /* Geometry.c in Sources */ = {isa = PBXBuildFile; fileRef = C05D561CAC8CEA224076D278C51625E7 /* Geometry.c */; };
+		033D564CA9E081A1852BB305772DB609 /* SkyboxGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF222E6ED84B371E14EF55C24769DB4 /* SkyboxGeometry.swift */; };
+		0827A92D032627C313A9FDC800A9D343 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5EC375050B7AB2A74A5E0DF034FDCC /* Constants.swift */; };
+		09BAB231EBEF17A75F93541CDCE99719 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCB9BF425B34685B29FDC61ECCB9E72 /* Metal.framework */; };
+		0E9A692C5D37B52054F328469ED0F8E2 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2811C5C63DAA8FFC9EFF338E3EF438 /* Renderer.swift */; };
+		1033D8AEC3FD5DCDE1F9B4B895702D9B /* Satin-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D00332FC599EBA906C13839C72119AD /* Satin-macOS-dummy.m */; };
+		11D5D519BC788B2681BEFCFBBE0EBD8A /* TextureComputeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53DEDE65E8CBDA8BEE9A5A0E1521125 /* TextureComputeSystem.swift */; };
+		123ACFA6D97E9AE755B42DA6FAF149FB /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8407247B813576423666E2FA2C831 /* Object.swift */; };
+		128F0CF085DA4EAAE38115A594D8BA6D /* Satin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8FD11993A8871987432C0019A160BA /* Satin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135B1C2A93A382BC7C3BAFE4BCD21E2A /* Types.c in Sources */ = {isa = PBXBuildFile; fileRef = 4056E7C17C1967FBF9BE47383C29A927 /* Types.c */; };
+		17A1B739339FF3E401DBED00C628E7AB /* Forge-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB330EFFD792A96447AA0A93F00B0E6E /* Forge-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1836983FE1D74F2E416382DCA93A8E6A /* Raycaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA2A9DD37823D7AF88B4AF3A6EFE65 /* Raycaster.swift */; };
+		1A195CAB516BD42A6944EA2FF5D768BE /* Float4Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6124AAAA14736A6D29A23E64D8339FF4 /* Float4Parameter.swift */; };
+		1C88E0D1EAE1C9C70C23CA0FA4EE93D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5EC375050B7AB2A74A5E0DF034FDCC /* Constants.swift */; };
+		1DAF134F4A62275CA0D1B34A0584496A /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63404F8AB7AA5261C5AE019C57A15DC5 /* Textures.swift */; };
+		1DCCF3A7B140CD49DF015EECC9C2ECA3 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA154BDA6DCD808C439BF8B447D2FF /* Material.swift */; };
+		1ED398AD4655393F308887156CAF79A2 /* Bounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 458BDD0401B81C64A0787BF397DC0AC2 /* Bounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200C5E8864E020B59637B2B1B354E7AD /* Geometry.c in Sources */ = {isa = PBXBuildFile; fileRef = C05D561CAC8CEA224076D278C51625E7 /* Geometry.c */; };
+		2087A678D63ACFD0127A22782EF7417B /* IntParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620D91EB828440B644704228DCAA9D71 /* IntParameter.swift */; };
+		220DF48B7DB46674E76B53CA354CA98F /* Generators.c in Sources */ = {isa = PBXBuildFile; fileRef = 047C21EAD76DA612A509C237F83A6433 /* Generators.c */; };
+		224387B16886D90BE527CFC67EF00639 /* ParameterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D494A1A7CF25BAFD6F98928DE6908 /* ParameterGroup.swift */; };
+		24B78CA4260A1F8D3056C00F0D9317C2 /* FileParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04808E51EA295E90B9140170F6CAAE4E /* FileParameter.swift */; };
+		24C802890DE232BEE8D5EDEBE62BB40F /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E8BFB97C9B8A978478289E2C827635 /* MetalKit.framework */; };
+		273722BF6A556F54BEF5B3B75B15EABA /* IcoSphereGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5B59638DE41F95DC19CC413D44587F /* IcoSphereGeometry.swift */; };
+		27473941CE72483C5A743D594B36C04D /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1355B9B0EB558464CF566029DD79A9C /* CameraController.swift */; };
+		28B4DEC67CAD48EB5C593F3D023B3EE5 /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE19197F9A429D5F9B7D7792D99224D /* FileWatcher.swift */; };
+		2A3A474DFCCE7F2EB05DB7AF9A5C934E /* Forge.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB6CBDE884F2567421B593D61C3AFB7 /* Forge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D072142878FCD033A1B849F42AB7297 /* TriangleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007E425A2F6DEFEE4C1BDF8488A044 /* TriangleGeometry.swift */; };
+		2D6B53BF8DDF0363925AC14C5EF3FC8A /* ParametricGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12737F4F2D5F6D76202804C9F46D3D /* ParametricGeometry.swift */; };
+		2D72945ED174CD924ED00985FDE90465 /* Satin.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8FD11993A8871987432C0019A160BA /* Satin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E02380279B8510E3F8A3F36FE19766E /* BasicPointMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1531BCE1D3E7941ED3821506EE07F /* BasicPointMaterial.swift */; };
+		2E1159BF153CC1307AF3DB7267C1D864 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036EFF87DDC8DE34BF8D3D0B6FBC687B /* Ray.swift */; };
+		2E8DF598035FC526F97D58CACACF98FF /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E4B1B611200DE83014B1359F13628 /* String+Extensions.swift */; };
+		304C2CAAE12EFF876F55C392A7EA2093 /* NormalColorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB456BB2DC411C4C704F4AB5AFD5575 /* NormalColorMaterial.swift */; };
+		304E39CD2B1F220081B23EAB1DC38BE9 /* Bezier.c in Sources */ = {isa = PBXBuildFile; fileRef = 24D78B632912D6AD80BFC26A8C6CC9E1 /* Bezier.c */; };
+		3148BB73E600EA59AAED62905F0F077C /* LiveMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0D5CE6982BD54C0FAF317CF9BFC76 /* LiveMaterial.swift */; };
+		31E41BA6DFB36DD774E592D7FDDE2BB3 /* StringParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415CAA4B08B5DD5CBBAEF2F832E2D10 /* StringParameter.swift */; };
+		32352B5F3A0395C7EE7E09D28A332598 /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63404F8AB7AA5261C5AE019C57A15DC5 /* Textures.swift */; };
+		33096D2E0BAB5CE2C7E085E3B73B871F /* Triangulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A7B7F6BBACC2F03A423373EAB01CA51 /* Triangulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330D5BB0DA4EC3EEB69752A7508CF4CA /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BA1425991C1039F340048BEE47F7DB /* Camera.swift */; };
+		3432BC551123472182260217B2FD26FB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D95DF097863F4DE910CD6AF7FBFD3 /* Helpers.swift */; };
+		37732C06D80DD2C1A9034D3350C1B839 /* SkyboxMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF00C84B85A2D882D58C117EC8D3BE /* SkyboxMaterial.swift */; };
+		38C8817BD6D0015875E3124B4FF04435 /* ForgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BA664EB5F6B1CF224863B8C9BE216 /* ForgeView.swift */; };
+		3A0F9896DAB72E7A8EEB10E8FF6BE1A8 /* UInt32Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8D918A46C7A98AF759543F27DB6F0 /* UInt32Parameter.swift */; };
+		3A155D5CB2620922CE7893E1588A315E /* PostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A1C654A4679398C48F07AF8F3B8E9 /* PostProcessor.swift */; };
+		3A4B3BE0BAB4C0AADDAAFBD08F26D161 /* Bounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 458BDD0401B81C64A0787BF397DC0AC2 /* Bounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A7925E4288851ACFA0BBAE20EEA9364 /* Triangulator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C896B00B3A809D21D952370C138A834 /* Triangulator.c */; };
+		3B7105AFB00EFE9B273D3700736345D8 /* PerspectiveCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF3F1E225E79E1998235DA00C61399 /* PerspectiveCameraController.swift */; };
+		3CC64856A19259E2357B2DFAC4827108 /* CapsuleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A558B57AEBF89068E7F8C8D38FD72F /* CapsuleGeometry.swift */; };
+		3DD40C5CFD410DDE9BB6A177E5C31479 /* Int3Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D5AD0873FB181D5212F5B1AA45DE0 /* Int3Parameter.swift */; };
+		3FB466B520E31E06EDB00F33D3600719 /* FloatParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDD0AD10E1CC54D0538C8085809124 /* FloatParameter.swift */; };
+		413BF0491C9E7BAD04CB1778E44E1850 /* ParametricGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12737F4F2D5F6D76202804C9F46D3D /* ParametricGeometry.swift */; };
+		41DBA48D22BA7DF137A79371071AFD92 /* Forge-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD44FCD45D1466A1D91ADB8E7B6CF8E7 /* Forge-macOS-dummy.m */; };
+		421E788CFBD758E6EE94D3F3EA1E4DD2 /* Int2Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52BB01EDFC389418F6A69A3ADB16FA6 /* Int2Parameter.swift */; };
+		44CFDDA338FC1B2AC2813D5979C31642 /* AnyParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178668724C8C345C23E8DDB870F6697 /* AnyParameter.swift */; };
+		44EA4DF3CAD3C65EBBB348B496F94698 /* Raycaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA2A9DD37823D7AF88B4AF3A6EFE65 /* Raycaster.swift */; };
+		45EED0085006C2D83EB0C627D6AD0DA6 /* PlaneGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB126FEB43B505BDE6CCB39D0AC0B551 /* PlaneGeometry.swift */; };
+		46B2C4D4F7ABE175340F027B4A8CED7D /* FloatParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDDD0AD10E1CC54D0538C8085809124 /* FloatParameter.swift */; };
+		4850EED0EAADFE8A7922E8540C8B9FF4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0D95DF097863F4DE910CD6AF7FBFD3 /* Helpers.swift */; };
+		4975187CDADB89C4AF5C940DCB7AFDDE /* Pods-SatinSpirit (iOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8620364E7AE84B85557B8F0A4A6427 /* Pods-SatinSpirit (iOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49960DBA71115FEDFE88BC3604D67E03 /* CapsuleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A558B57AEBF89068E7F8C8D38FD72F /* CapsuleGeometry.swift */; };
+		4A8AA124428E061676778A461934492F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCB9BF425B34685B29FDC61ECCB9E72 /* Metal.framework */; };
+		4B6915674A1EE44971E0142EDF38F556 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B44219AB871A8E120A0B1BAE20EF4 /* Bundle+Extensions.swift */; };
+		4CC0D6384E1B64E31E471B9D5381A3F6 /* Generators.h in Headers */ = {isa = PBXBuildFile; fileRef = C74432D375023CF0E5A12021DE0AA51C /* Generators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50B2D3B92FFD94651F5D6400793FAEEF /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698DB3B289C2A40F7ABAE67C8AD0E7C /* Paths.swift */; };
+		514907874D4593ED4C01D7A7807CEBEF /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = F83FE9E391E9A8BDB701C1DB6E37A4EE /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51DA9C26C264815AF5D7E8558F3CE0A8 /* PostProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A1C654A4679398C48F07AF8F3B8E9 /* PostProcessor.swift */; };
+		52A4A8824024C9F0F641A6E0568E58D1 /* BasicPointMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1531BCE1D3E7941ED3821506EE07F /* BasicPointMaterial.swift */; };
+		531FA784DA56EDDDFA9B4FB6573D1BF7 /* GesturalCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909FAB37BD2B37B192BACC940665951 /* GesturalCameraController.swift */; };
+		535D925EAB3D8889836CA2FBB1BAACF7 /* Simd+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5156127D77373ADE31A1C34BB6132E13 /* Simd+Extensions.swift */; };
+		538B37086821BED8E162D118BAFDC8A5 /* BufferComputeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD595E15C554FA0DEE44099C0E4E2DD6 /* BufferComputeSystem.swift */; };
+		56EB94D80B95C66D046DE1EDF92D0CA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60F6395BEBAF7942A25FB48F41BC6C /* Cocoa.framework */; };
+		58273710A6ACDBA874E822A5E7B08C3B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB02516D43EE0A5475B19EAE1066CF0B /* SwiftUI.framework */; };
+		5880A68C20F2C26B7ABE384C1EB97762 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D0A606BA2014C4A1CBBC5AF37F212 /* ViewController.swift */; };
+		58BB4C1FF7138AF02A90805FEA7229EC /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E8BFB97C9B8A978478289E2C827635 /* MetalKit.framework */; };
+		5A31290584DA46E73112A6B3693B60C1 /* SquircleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B040AE360EA7FDEE7789F15320E1B3 /* SquircleGeometry.swift */; };
+		5E7F5F18004F66AC5E5179DA638B749D /* AnyParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178668724C8C345C23E8DDB870F6697 /* AnyParameter.swift */; };
+		602180C70176A94324A4CDC1609B7F49 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59B675D7204757A54A8353F0214212 /* Math.swift */; };
+		6031E78BD3D0CB12C90835A147CEA6B5 /* Bounds.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FC0F88D2DFAF4A671DD213E99BC5C /* Bounds.c */; };
+		606E7A80EE6802F8DD52611AB3B63B30 /* PackedFloat3Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089CD3EAB84110BF57DE4C6E6EDD01B5 /* PackedFloat3Parameter.swift */; };
+		60BA01A05B344D7FBBDBD0197F724E49 /* Pipelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93008C3C760E2BE34CF6E80DF269B4 /* Pipelines.swift */; };
+		60F998642AD773838AE2D4C1AB988BF6 /* Generators.c in Sources */ = {isa = PBXBuildFile; fileRef = 047C21EAD76DA612A509C237F83A6433 /* Generators.c */; };
+		613342F70CBC187FE248C322D45C65C8 /* Bezier.c in Sources */ = {isa = PBXBuildFile; fileRef = 24D78B632912D6AD80BFC26A8C6CC9E1 /* Bezier.c */; };
+		613E429AB21BA13938A650B6F5683EF4 /* CylinderGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B3F6EFE3EA837AE0B1DFFE4048A6A /* CylinderGeometry.swift */; };
+		61715C59787007A0660CD77A2C2E532D /* ParameterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EF30330FCFB5C7D5B63B998394F82 /* ParameterParser.swift */; };
+		620D49C0B042F0E888EED9751509817E /* UInt32Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8D918A46C7A98AF759543F27DB6F0 /* UInt32Parameter.swift */; };
+		645F81BD212715315E491DFC75BF1794 /* TorusGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D7F01B1EE5668EFE5F879B9901DB8 /* TorusGeometry.swift */; };
+		65278305D5376525C7246C375139485E /* ExtrudedTextGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C43DC91FA14744923DC76CDE8312B0 /* ExtrudedTextGeometry.swift */; };
+		65C984B018EEAF2E32CE756AD2729D07 /* CylinderGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B3F6EFE3EA837AE0B1DFFE4048A6A /* CylinderGeometry.swift */; };
+		6795297DBD3122E47EBA338B2D61D0CB /* TriangleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007E425A2F6DEFEE4C1BDF8488A044 /* TriangleGeometry.swift */; };
+		68097A8B5EB6C77F4A9E3D44CB0ADEDB /* ConeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525F4869180D2EFB3A45244078099BE /* ConeGeometry.swift */; };
+		681952C206C188101E9DC7C61B219079 /* Types.c in Sources */ = {isa = PBXBuildFile; fileRef = 4056E7C17C1967FBF9BE47383C29A927 /* Types.c */; };
+		690A50C6C2EDD7957AAC1B6CF63B7521 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B0BAE12CC6051E54B0DC4AA3FA81B /* Geometry.swift */; };
+		69E3EEC589D49E31A83A40AD88820B40 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A34B6995F1816954A10BF8797A77B5 /* ViewController.xib */; };
+		6A2F91A037E98CEF48CF3B892048BBAB /* RoundedRectGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7002678F3CFB87882DD874AAAF0D1 /* RoundedRectGeometry.swift */; };
+		6B3145FF393FDFB946D5CF26ADBB6C4B /* Float2Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30373EFC2B2A688079E278FA35B2CB11 /* Float2Parameter.swift */; };
+		6B72BB2F03692111575F5AF509FB8568 /* BoolParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7669B308DD2E330603470ED82A90983 /* BoolParameter.swift */; };
+		6BF40D8DD1E1231EC5700359DA791FE2 /* DepthMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9753AAE7FEDCCB2DAF897648D282D638 /* DepthMaterial.swift */; };
+		6C4CEE02E6DF6D1381BC553FB3296541 /* ParameterParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769EF30330FCFB5C7D5B63B998394F82 /* ParameterParser.swift */; };
+		6CBCF07D2BD60DD6BBF7104106F59CA5 /* MultipleTextureComputeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DBCA70803C56DD967EAC14FECD6100 /* MultipleTextureComputeSystem.swift */; };
+		6DACC3D7BD0B2C279EBFECEC3F9376F3 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14722418A7FFBB204397CFF0862F0E /* Context.swift */; };
+		6EED07E0C82AA732C0D4D1DB1CBB7DAA /* Int2Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52BB01EDFC389418F6A69A3ADB16FA6 /* Int2Parameter.swift */; };
+		710EE5F56267FC6CC980BFF84110E57A /* ConeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1525F4869180D2EFB3A45244078099BE /* ConeGeometry.swift */; };
+		7146CF9B64F4B504064BFFFAAE1FCE53 /* Pods-SatinSpirit (macOS)-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D9C75B15F09F48841C15BB77599A95C /* Pods-SatinSpirit (macOS)-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7331AB8FF3B2B1173A2D878D95CC2C30 /* MatCapMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897747C8FF79B4C3B6C4F9DC34C744BC /* MatCapMaterial.swift */; };
+		7552D1A0942AC2C5816C10C18D5795FB /* Pipelines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E93008C3C760E2BE34CF6E80DF269B4 /* Pipelines.swift */; };
+		769E6D310542C2236B120A4FF3F1E3B6 /* BasicTextureMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9316660D565F0B4A6E0C10FE58E8CB /* BasicTextureMaterial.swift */; };
+		772770967C64EA55A834EE1301D321C3 /* BasicDiffuseMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAA3B203225B35347C505D092DC362 /* BasicDiffuseMaterial.swift */; };
+		79EE25AA9EA59315B0C3465F4B80DDB9 /* MatCapMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897747C8FF79B4C3B6C4F9DC34C744BC /* MatCapMaterial.swift */; };
+		7D89EA28A6BD4F9230CF456DE2746042 /* PackedFloat3Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089CD3EAB84110BF57DE4C6E6EDD01B5 /* PackedFloat3Parameter.swift */; };
+		7F96706E6805E71E5CC88F6C08DE47B5 /* UVColorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3757A4F2E6A6220BD31048379CD5E27 /* UVColorMaterial.swift */; };
+		7FFF72FC19C5E78342131BE5E7737458 /* MetalFileCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAEB31B3922D5FFA4CAC08C327DF94 /* MetalFileCompiler.swift */; };
+		82E1EB4C40A43D641B0B1AC3A899E6EE /* Float4Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6124AAAA14736A6D29A23E64D8339FF4 /* Float4Parameter.swift */; };
+		82EAF970B2DEE0E49BB0C7901A0D87F5 /* Int3Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601D5AD0873FB181D5212F5B1AA45DE0 /* Int3Parameter.swift */; };
+		84A36E255A03F2DF454D9D604EBD9406 /* Forge-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E30174EF88D19967647B715DFB79D6BA /* Forge-iOS-dummy.m */; };
+		85091544D70EECAF462AA41F8A7A8255 /* Pods-SatinSpirit (macOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ACAE92C6FB6A118D3B445071537599 /* Pods-SatinSpirit (macOS)-dummy.m */; };
+		85533B5E0864A55B6A0548A9FE844705 /* OrthographicCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A66347F543C38D6FEC5A0E28646C41 /* OrthographicCameraController.swift */; };
+		8571545F99E2BF24DD2A17739DD61B21 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F698DB3B289C2A40F7ABAE67C8AD0E7C /* Paths.swift */; };
+		86EE341C53CD9DA3FDD6B5B13AFDF917 /* BoxGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FE1270BB8C42F0D90F98702CCAC3A /* BoxGeometry.swift */; };
+		8959BE62BC37BA83D19385B63DB28DC5 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59B675D7204757A54A8353F0214212 /* Math.swift */; };
+		8B85189431F346CCB7EF8E1E02DFF2D5 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C79E5313D773E83EC8F76F3B2359FC /* MetalKit.framework */; };
+		8C4C85FD06D197CAB87F4795C6B6C4EE /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314E803F7FC8B59297A94D212C1957FD /* Metal.framework */; };
+		8F33971C285BD4073BCB4D95CA48B004 /* Triangulator.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C896B00B3A809D21D952370C138A834 /* Triangulator.c */; };
+		8FD23EEB9837910F40E6C81B97DBD342 /* VertexDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CF939583E682ACA31A066B299FA33 /* VertexDescriptors.swift */; };
+		905EAD6408AC0D592D81FEC2687A5468 /* TorusGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026D7F01B1EE5668EFE5F879B9901DB8 /* TorusGeometry.swift */; };
+		90A27C75DCF745E61D2A1E49AEB6B74F /* CircleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997D7300693230A1F8D17AE3DF68E818 /* CircleGeometry.swift */; };
+		913367806DE9028D04C8D9D1DEB0CE3C /* PointGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD3DBE598A22DBB218B7A97CE91B8F /* PointGeometry.swift */; };
+		9317F718B6470FFFD9C39EB4DAD42E51 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E3EC1DAAAB0A0D84E456EA5994E49 /* Parameter.swift */; };
+		974EEB14D06EA35251E18A8B38403587 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60F6395BEBAF7942A25FB48F41BC6C /* Cocoa.framework */; };
+		99174896BE561D8AD03A936002EBD139 /* Float2Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30373EFC2B2A688079E278FA35B2CB11 /* Float2Parameter.swift */; };
+		9A6C767512262FC04502D762740CF41D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCBF5C8DF7BB1E76B86D73983B01FCB /* Renderer.swift */; };
+		9AA405B39833A0F430E5CD070CDAA890 /* BasicColorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B60A52C5B4F42FF33AAE23D33CCC5 /* BasicColorMaterial.swift */; };
+		9C1E3981E8026C49D6868EE584F51AB8 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E9279EB10AC0D658FB16F50D84919 /* Buffer.swift */; };
+		9D9CC10B7A8D4D212D812AE73EBADAE2 /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = F83FE9E391E9A8BDB701C1DB6E37A4EE /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DA4D67558A7775521F48F196867192E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC85A946DA78DF925CA313D77E65459 /* Foundation.framework */; };
+		9FDCDFE9F4F33D991A57D6E4D2856B9A /* OrthographicCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E3BC35349229E44C92506B86C75996 /* OrthographicCamera.swift */; };
+		A09040A4A1A90A2AFA6A1E24D7883F26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC85A946DA78DF925CA313D77E65459 /* Foundation.framework */; };
+		A0ADB2E8B328F8F1C593656061923BF1 /* PlaneGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB126FEB43B505BDE6CCB39D0AC0B551 /* PlaneGeometry.swift */; };
+		A17A316535A2AD3FE653D9AF46EEF9A1 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8407247B813576423666E2FA2C831 /* Object.swift */; };
+		A31958B0CC909738DFF3BCA617048076 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFA76AB0980D8CE21DEE4540A1CC6F /* View.swift */; };
+		A53618AFB9CBAB87A3F40310E1026C26 /* BasicColorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B60A52C5B4F42FF33AAE23D33CCC5 /* BasicColorMaterial.swift */; };
+		A6ABD2DA77AF6DFE18095EABD397E358 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620B0BAE12CC6051E54B0DC4AA3FA81B /* Geometry.swift */; };
+		A6D1C943DB5B3E69153407CCC3C4968A /* UniformBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14F173132D8D6AC3DC1441DD2CBB86A /* UniformBuffer.swift */; };
+		A6E25EBC3060AB02CBEF26CA767FFC4A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5CCD20016CF45261CE165AEE7E6D93 /* SwiftUI.framework */; };
+		A830717720E871A2EDD34DF224827DAC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C48B769C937F5CAD3D403CD8AC253BA /* ViewController.xib */; };
+		A8698506B7948384EB0CD015E424736C /* UVColorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3757A4F2E6A6220BD31048379CD5E27 /* UVColorMaterial.swift */; };
+		A9305BE12B285379FB9E31714C977597 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B07EB8A12E5D7EF8E5709CE1463BD /* Mesh.swift */; };
+		A94A8307AA29E446C086BC204C6294C6 /* Int4Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9650B9BE321B55EDDDEBDE1EC1427 /* Int4Parameter.swift */; };
+		A96A965CB41F9E7BFEDFDBE85CA97615 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D89CD16D5730BFD647C594944915F1 /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D52298A5D509028613570783363B23 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B07EB8A12E5D7EF8E5709CE1463BD /* Mesh.swift */; };
+		A9F5C46C7453F5A90B21C50371F23D57 /* Triangulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A7B7F6BBACC2F03A423373EAB01CA51 /* Triangulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB102D589580277BA8120E5366D190FF /* Float3Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA985B8CE8CB6578FA79AF10144F9CB /* Float3Parameter.swift */; };
+		AB3D285E22801A93209FA92D7D2FF71A /* PerspectiveCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A08F8484A95DA9E9EA7F495E3B04B6 /* PerspectiveCamera.swift */; };
+		ABA84ADE67E53341CC67044152F16E5B /* Satin-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EAB6CE9902FFDBB3E2AAAFD7FCBF1C /* Satin-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC9651D14173DBA98281BF49B544E70E /* Bezier.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9B6D5EE711AD3D1BE723E07B5A2D88 /* Bezier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACF5BDE590D6C3F510AD90176F9EC00A /* QuadGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8B644C29C5AAA1CF513078C92AB4 /* QuadGeometry.swift */; };
+		ADB5B998B2BD56CAA51A60131FA4984E /* VertexUniforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC1BA5D9C180B2603F6249935CB360 /* VertexUniforms.swift */; };
+		ADC1E92379E3FDB377543D70D3D0FA3D /* Generators.h in Headers */ = {isa = PBXBuildFile; fileRef = C74432D375023CF0E5A12021DE0AA51C /* Generators.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADF95E26B5233A64B61AD9AA857B4E6E /* SphereGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4A9C9B233D0106A939F21D6BBFF8F /* SphereGeometry.swift */; };
+		AE05832B5B725A8E232DB1C3F3D0C3F8 /* Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D89CD16D5730BFD647C594944915F1 /* Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF98F3AAE7B56A056BCE5BC1F10B8301 /* PointGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD3DBE598A22DBB218B7A97CE91B8F /* PointGeometry.swift */; };
+		B2217AAA53EEA58E31E6B517EE886206 /* ExtrudedTextGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C43DC91FA14744923DC76CDE8312B0 /* ExtrudedTextGeometry.swift */; };
+		B293FAA69EB36E5638FDC15AD1F3D75D /* BasicDiffuseMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FAA3B203225B35347C505D092DC362 /* BasicDiffuseMaterial.swift */; };
+		B2CAE701B32FF1BA88C810B87946B4B3 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2811C5C63DAA8FFC9EFF338E3EF438 /* Renderer.swift */; };
+		B3880E04DCFCEB409B456437B6369479 /* Pipelines in Resources */ = {isa = PBXBuildFile; fileRef = 54002F9D5BF01EC61A6A9AB1E21BE399 /* Pipelines */; };
+		B74CAD59C8144A4E4AA0955134B18347 /* Submesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01A103425E3A62712AD3D6262669C2 /* Submesh.swift */; };
+		B7A747850B0E44A4019FFD26640EECBF /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314E803F7FC8B59297A94D212C1957FD /* Metal.framework */; };
+		B7B247016B6D2D0E00723CD45F02123F /* StringParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F415CAA4B08B5DD5CBBAEF2F832E2D10 /* StringParameter.swift */; };
+		B7D9C02795B701C6F2AF231D3401A45E /* DepthMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9753AAE7FEDCCB2DAF897648D282D638 /* DepthMaterial.swift */; };
+		B7E3A14B895EA563B06DE23F55D296F5 /* SphereGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D4A9C9B233D0106A939F21D6BBFF8F /* SphereGeometry.swift */; };
+		B82CB378080D9F169EC9BCFBD6147357 /* PerspectiveCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF3F1E225E79E1998235DA00C61399 /* PerspectiveCameraController.swift */; };
+		BC2B583F26994744DB786153E764C3CB /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E3EC1DAAAB0A0D84E456EA5994E49 /* Parameter.swift */; };
+		BD879D37D4E298D095F8759C6290CA7A /* DoubleParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22FDA6F1C9628A8B131E1B1FEAB648 /* DoubleParameter.swift */; };
+		BDE20565ED13AF7605A48E3FCF9A8B92 /* Submesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D01A103425E3A62712AD3D6262669C2 /* Submesh.swift */; };
+		BEEA6C0EAA8EDD490AD4B05C81E24C78 /* SkyboxMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF00C84B85A2D882D58C117EC8D3BE /* SkyboxMaterial.swift */; };
+		BF3119FC22F29901BD95E4CD8DCAD10C /* BoolParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7669B308DD2E330603470ED82A90983 /* BoolParameter.swift */; };
+		BF8EEDA6CEC1904AFE14A0C3EB4F81B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2D4D2EFD6803878F06FFA5C7A97BC7 /* ViewController.swift */; };
+		BFD8ACD6D6B93019053900B789A396B5 /* UniformBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14F173132D8D6AC3DC1441DD2CBB86A /* UniformBuffer.swift */; };
+		C0603BB73CD25AE8AAC92B18820D173A /* MultipleTextureComputeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DBCA70803C56DD967EAC14FECD6100 /* MultipleTextureComputeSystem.swift */; };
+		C06E9DE000FBE39299C5D25802A67BED /* TextureComputeSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53DEDE65E8CBDA8BEE9A5A0E1521125 /* TextureComputeSystem.swift */; };
+		C0CE477944AB7E8BE8A80346FD0CCBCD /* Satin-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 984970493DF3C52A1E1CE6411F751402 /* Satin-iOS-dummy.m */; };
+		C10DECAC793557C450714F3D3DF7AA22 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCBF5C8DF7BB1E76B86D73983B01FCB /* Renderer.swift */; };
+		C18C92849A5147BE41A890229E36818A /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1355B9B0EB558464CF566029DD79A9C /* CameraController.swift */; };
+		C1ABD190696ADF6FBBA54FE9871DF8AB /* SquircleGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B040AE360EA7FDEE7789F15320E1B3 /* SquircleGeometry.swift */; };
+		C38264DFAFAC05C6D7E77A6EA4EA671A /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BA1425991C1039F340048BEE47F7DB /* Camera.swift */; };
+		C3E21B151C9E65D88E2B1C7714AA81D9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14722418A7FFBB204397CFF0862F0E /* Context.swift */; };
+		C40A1FC33336E10C756AD950E5B042E8 /* MetalFileCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AAEB31B3922D5FFA4CAC08C327DF94 /* MetalFileCompiler.swift */; };
+		C417C47684CC6A7D403C8AD18573B82E /* Pods-SatinSpirit (iOS)-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 998AEFECD5D49233D44E333F48C058B2 /* Pods-SatinSpirit (iOS)-dummy.m */; };
+		C48C0F5D3C302AFF39EC606F7B99C92C /* ParameterGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5D494A1A7CF25BAFD6F98928DE6908 /* ParameterGroup.swift */; };
+		C699638BE4746EEE178BFC806C757490 /* TextGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABDFC11E1A0FE60BCB81A1CF3568DC /* TextGeometry.swift */; };
+		C69D0E2973E2FFF2F089BE26D3348198 /* PerspectiveCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A08F8484A95DA9E9EA7F495E3B04B6 /* PerspectiveCamera.swift */; };
+		C6A56E020C319E8F8F8536A5019985A1 /* Forge.h in Headers */ = {isa = PBXBuildFile; fileRef = DAB6CBDE884F2567421B593D61C3AFB7 /* Forge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7677772D1397C9D8932672DA7863047 /* ArcGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E12B719293522CFB763E77BAA51C3 /* ArcGeometry.swift */; };
+		CAFF076991310F9371F6D96C4E971220 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C79E5313D773E83EC8F76F3B2359FC /* MetalKit.framework */; };
+		CBF0D4862C8D825BB9B1336C56C25BD1 /* FPSCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF42AFD9AA5F74C5367E60CE018217D /* FPSCameraController.swift */; };
+		CCA5EE037C9CB45747DB122C5DECF5A9 /* IntParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620D91EB828440B644704228DCAA9D71 /* IntParameter.swift */; };
+		CCA7E98422C7DB70EF0AEE78D84AB0A8 /* FPSCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF42AFD9AA5F74C5367E60CE018217D /* FPSCameraController.swift */; };
+		CE6724181771DD1B4F276CBA2BDF1A4C /* DoubleParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F22FDA6F1C9628A8B131E1B1FEAB648 /* DoubleParameter.swift */; };
+		CED7AC26B3DBDC45166E90BEEAB66C24 /* Pipelines in Resources */ = {isa = PBXBuildFile; fileRef = 54002F9D5BF01EC61A6A9AB1E21BE399 /* Pipelines */; };
+		CEF87A9D2875AA1B8F8AA217629D3678 /* IcoSphereGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5B59638DE41F95DC19CC413D44587F /* IcoSphereGeometry.swift */; };
+		CFB2A617AA6321929EDAA3C9BA2CBD2B /* BasicTextureMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9316660D565F0B4A6E0C10FE58E8CB /* BasicTextureMaterial.swift */; };
+		CFD3E4523E8171DCCF084BE8930158BF /* Bezier.h in Headers */ = {isa = PBXBuildFile; fileRef = AC9B6D5EE711AD3D1BE723E07B5A2D88 /* Bezier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2B47F7C811DDA3B8BDE46ACD047A03E /* RoundedRectGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7002678F3CFB87882DD874AAAF0D1 /* RoundedRectGeometry.swift */; };
+		D6FE4866A03675FC158711B56BDBBBB7 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40D070B5F9688DB0FB8F7A9B1AA640 /* Vertex.swift */; };
+		D83D293D7D120CF652CABC9E6A1BBBCE /* BoxGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FE1270BB8C42F0D90F98702CCAC3A /* BoxGeometry.swift */; };
+		D894FF5A1BBBA25BED4FB0AE2988488D /* OrthographicCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A66347F543C38D6FEC5A0E28646C41 /* OrthographicCameraController.swift */; };
+		D9320869AA47FC90F26E6E7D8BAC6528 /* GesturalCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909FAB37BD2B37B192BACC940665951 /* GesturalCameraController.swift */; };
+		D9998ABDB8A4A50AD7AC8BB480AFBB0B /* Satin-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C007B1309EA19E7E9227C371F28B1D1 /* Satin-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9FA950555169E826C05D228C908B824 /* ForgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896BA664EB5F6B1CF224863B8C9BE216 /* ForgeView.swift */; };
+		DA10B4CB2926CAD1EF4D1E5C9FEADF4D /* SkyboxGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF222E6ED84B371E14EF55C24769DB4 /* SkyboxGeometry.swift */; };
+		DAA73442A5F1E22BF2EC832B6333394E /* ArcGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E12B719293522CFB763E77BAA51C3 /* ArcGeometry.swift */; };
+		DB2782F1D13BB355974EF7B505E16B75 /* Float3Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA985B8CE8CB6578FA79AF10144F9CB /* Float3Parameter.swift */; };
+		DD11AC75B6058F7140A911EA983D17DC /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F40D070B5F9688DB0FB8F7A9B1AA640 /* Vertex.swift */; };
+		DD270AD33204A3076549CF9F83C6314F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E4B1B611200DE83014B1359F13628 /* String+Extensions.swift */; };
+		DDFFB7215872D77B0F3B23C9A9FA442E /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE19197F9A429D5F9B7D7792D99224D /* FileWatcher.swift */; };
+		DE41EC58538FCBCCE3E6B82917A4459D /* ExtrudedRoundedRectGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3AA919887076173B9AE43E75CA19E /* ExtrudedRoundedRectGeometry.swift */; };
+		E0267C33FB7C2D650CB83075AAD33D10 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036EFF87DDC8DE34BF8D3D0B6FBC687B /* Ray.swift */; };
+		E032847253C5C52E8FEE17A868B44CF4 /* OrthographicCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E3BC35349229E44C92506B86C75996 /* OrthographicCamera.swift */; };
+		E0A4DA105032BF7C8F10CFC77951BE30 /* QuadGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8B644C29C5AAA1CF513078C92AB4 /* QuadGeometry.swift */; };
+		E196988604B2166F3CB785D78CD88E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC85A946DA78DF925CA313D77E65459 /* Foundation.framework */; };
+		E64AFB9072E755F69B139E6A522C84A9 /* Int4Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9650B9BE321B55EDDDEBDE1EC1427 /* Int4Parameter.swift */; };
+		E6927D3D2BF69FB785F9667411F7DEC7 /* Forge-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47510EC9CA00089DC03DA1ABB6561A86 /* Forge-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F295E65E655AE97C81083553F2D842 /* Simd+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5156127D77373ADE31A1C34BB6132E13 /* Simd+Extensions.swift */; };
+		F025B090C473F8CEA6D6009C84E98184 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E9279EB10AC0D658FB16F50D84919 /* Buffer.swift */; };
+		F20187D9AA6E57CC9DA8DA464F30B4D2 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B44219AB871A8E120A0B1BAE20EF4 /* Bundle+Extensions.swift */; };
+		F414FEE332FF71131C0411707CE65EA8 /* LiveMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F0D5CE6982BD54C0FAF317CF9BFC76 /* LiveMaterial.swift */; };
+		F4C7BBDB671CA0F5A1381BA76525AF62 /* VertexDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4CF939583E682ACA31A066B299FA33 /* VertexDescriptors.swift */; };
+		F611B9F66B78F0C4E77214EE777471A1 /* Bounds.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FC0F88D2DFAF4A671DD213E99BC5C /* Bounds.c */; };
+		F78FE35B439B578601BFDCADD35E34C3 /* ExtrudedRoundedRectGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3AA919887076173B9AE43E75CA19E /* ExtrudedRoundedRectGeometry.swift */; };
+		F829FC4C7E63BBCE729749A63CB46DBC /* FileParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04808E51EA295E90B9140170F6CAAE4E /* FileParameter.swift */; };
+		F8B3D9292B89897E440256E582EACDDA /* NormalColorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB456BB2DC411C4C704F4AB5AFD5575 /* NormalColorMaterial.swift */; };
+		FBF965567F1025217C7223FFE595389F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF60F6395BEBAF7942A25FB48F41BC6C /* Cocoa.framework */; };
+		FCC40CF89F5F3F6D4B5D1FB5075ABF8B /* VertexUniforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC1BA5D9C180B2603F6249935CB360 /* VertexUniforms.swift */; };
+		FF6FF994B85B899BBF31B0DC377F3317 /* TextGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05ABDFC11E1A0FE60BCB81A1CF3568DC /* TextGeometry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		350AA93AD981C77E71140C5E4FD06ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA0C59D839DA3E670EADF06A4DF88586;
+			remoteInfo = "Satin-iOS";
+		};
+		7401B887EDCC36B8936E2CDF1444F1E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 259CA504A77E7F7838AB708EA721FBF4;
+			remoteInfo = "Forge-iOS";
+		};
+		A63B9554093D3E90C3FEFBE75EAC9EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0AE70AD20164AB7D147EFD0C4379392;
+			remoteInfo = "Forge-macOS";
+		};
+		AD0DB3888B35AD27F75C612E15E271CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4726CE7FEC99998105B5D295821647AE;
+			remoteInfo = "Satin-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006A1C654A4679398C48F07AF8F3B8E9 /* PostProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostProcessor.swift; sourceTree = "<group>"; };
+		00E8BFB97C9B8A978478289E2C827635 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		026D7F01B1EE5668EFE5F879B9901DB8 /* TorusGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TorusGeometry.swift; sourceTree = "<group>"; };
+		036EFF87DDC8DE34BF8D3D0B6FBC687B /* Ray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		03B1217F8F0F4D5DC07773E874CF4F71 /* Pods_SatinSpirit__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SatinSpirit__macOS_.framework; path = "Pods-SatinSpirit (macOS).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047C21EAD76DA612A509C237F83A6433 /* Generators.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Generators.c; sourceTree = "<group>"; };
+		04808E51EA295E90B9140170F6CAAE4E /* FileParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileParameter.swift; sourceTree = "<group>"; };
+		05ABDFC11E1A0FE60BCB81A1CF3568DC /* TextGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextGeometry.swift; sourceTree = "<group>"; };
+		089CD3EAB84110BF57DE4C6E6EDD01B5 /* PackedFloat3Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PackedFloat3Parameter.swift; sourceTree = "<group>"; };
+		0A7B07EB8A12E5D7EF8E5709CE1463BD /* Mesh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		0A8FD11993A8871987432C0019A160BA /* Satin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Satin.h; path = Source/Satin.h; sourceTree = "<group>"; };
+		0D8620364E7AE84B85557B8F0A4A6427 /* Pods-SatinSpirit (iOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SatinSpirit (iOS)-umbrella.h"; sourceTree = "<group>"; };
+		0EFA28CE49BE40056A295D0D7487F55E /* Satin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Satin.framework; path = "Satin-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A66347F543C38D6FEC5A0E28646C41 /* OrthographicCameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrthographicCameraController.swift; sourceTree = "<group>"; };
+		1525F4869180D2EFB3A45244078099BE /* ConeGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ConeGeometry.swift; sourceTree = "<group>"; };
+		16BFA76AB0980D8CE21DEE4540A1CC6F /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		16C79E5313D773E83EC8F76F3B2359FC /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		173ABA2277BE0F9E080A427148D9E69E /* Satin-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Satin-macOS.modulemap"; path = "../Satin-macOS/Satin-macOS.modulemap"; sourceTree = "<group>"; };
+		1B12737F4F2D5F6D76202804C9F46D3D /* ParametricGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParametricGeometry.swift; sourceTree = "<group>"; };
+		1E8453BBAE9EE72AAC5729B4349B00D1 /* Satin-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Satin-iOS-Info.plist"; sourceTree = "<group>"; };
+		1FAC1BA5D9C180B2603F6249935CB360 /* VertexUniforms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VertexUniforms.swift; sourceTree = "<group>"; };
+		216B3F6EFE3EA837AE0B1DFFE4048A6A /* CylinderGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CylinderGeometry.swift; sourceTree = "<group>"; };
+		24D78B632912D6AD80BFC26A8C6CC9E1 /* Bezier.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Bezier.c; sourceTree = "<group>"; };
+		25007E425A2F6DEFEE4C1BDF8488A044 /* TriangleGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TriangleGeometry.swift; sourceTree = "<group>"; };
+		26D4A9C9B233D0106A939F21D6BBFF8F /* SphereGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SphereGeometry.swift; sourceTree = "<group>"; };
+		2799FCA38BA1ADE77EF3BBDFB263A20B /* Pods-SatinSpirit (iOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SatinSpirit (iOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A3960B4C64FC1D6B23A20CC273F16B1 /* Pods-SatinSpirit (macOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SatinSpirit (macOS).modulemap"; sourceTree = "<group>"; };
+		2EA985B8CE8CB6578FA79AF10144F9CB /* Float3Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Float3Parameter.swift; sourceTree = "<group>"; };
+		2F40D070B5F9688DB0FB8F7A9B1AA640 /* Vertex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		30373EFC2B2A688079E278FA35B2CB11 /* Float2Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Float2Parameter.swift; sourceTree = "<group>"; };
+		310D5720A0E27BA7287F8E09E8720F7C /* Pods-SatinSpirit (iOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SatinSpirit (iOS)-Info.plist"; sourceTree = "<group>"; };
+		314E803F7FC8B59297A94D212C1957FD /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		32DBCA70803C56DD967EAC14FECD6100 /* MultipleTextureComputeSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MultipleTextureComputeSystem.swift; sourceTree = "<group>"; };
+		38D1113AAD6F4C33B1C48652DB5397D0 /* Pods-SatinSpirit (macOS)-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SatinSpirit (macOS)-frameworks.sh"; sourceTree = "<group>"; };
+		3C6D0A606BA2014C4A1CBBC5AF37F212 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3CB3AA919887076173B9AE43E75CA19E /* ExtrudedRoundedRectGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtrudedRoundedRectGeometry.swift; sourceTree = "<group>"; };
+		3D08FC89AFF4D3AFED0464BDCB250249 /* Forge.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Forge.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3D9C75B15F09F48841C15BB77599A95C /* Pods-SatinSpirit (macOS)-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SatinSpirit (macOS)-umbrella.h"; sourceTree = "<group>"; };
+		4056E7C17C1967FBF9BE47383C29A927 /* Types.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Types.c; sourceTree = "<group>"; };
+		43EAB6CE9902FFDBB3E2AAAFD7FCBF1C /* Satin-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Satin-macOS-umbrella.h"; path = "../Satin-macOS/Satin-macOS-umbrella.h"; sourceTree = "<group>"; };
+		456EDF0E402F20ADE98E0BCA4816EA3D /* Forge-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Forge-macOS.release.xcconfig"; path = "../Forge-macOS/Forge-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		458BDD0401B81C64A0787BF397DC0AC2 /* Bounds.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bounds.h; sourceTree = "<group>"; };
+		47510EC9CA00089DC03DA1ABB6561A86 /* Forge-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Forge-iOS-umbrella.h"; sourceTree = "<group>"; };
+		47FF93399C64DE4D2E632DEBDA744B9E /* Satin-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Satin-iOS.modulemap"; sourceTree = "<group>"; };
+		4ADC401C1F224D3F05661C90E444F6A6 /* Satin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Satin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4B5EC375050B7AB2A74A5E0DF034FDCC /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C14722418A7FFBB204397CFF0862F0E /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		4C5FE1270BB8C42F0D90F98702CCAC3A /* BoxGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BoxGeometry.swift; sourceTree = "<group>"; };
+		4D949F26120C5F3B971BD1F87E3DC786 /* Pods-SatinSpirit (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SatinSpirit (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		4F2D4D2EFD6803878F06FFA5C7A97BC7 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F7EE93C0ADFECE56A9ACF32243EED39 /* Pods-SatinSpirit (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SatinSpirit (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		5156127D77373ADE31A1C34BB6132E13 /* Simd+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Simd+Extensions.swift"; sourceTree = "<group>"; };
+		52A558B57AEBF89068E7F8C8D38FD72F /* CapsuleGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CapsuleGeometry.swift; sourceTree = "<group>"; };
+		52C7817AA42939A8B80E3642617B2BB2 /* Satin-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Satin-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		54002F9D5BF01EC61A6A9AB1E21BE399 /* Pipelines */ = {isa = PBXFileReference; includeInIndex = 1; name = Pipelines; path = Source/Pipelines; sourceTree = "<group>"; };
+		55C8407247B813576423666E2FA2C831 /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		58009406904F22AAC119504CE36E4A04 /* Forge-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Forge-iOS.modulemap"; sourceTree = "<group>"; };
+		582E9279EB10AC0D658FB16F50D84919 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
+		58FAA3B203225B35347C505D092DC362 /* BasicDiffuseMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicDiffuseMaterial.swift; sourceTree = "<group>"; };
+		5A9ABDEE345D23A7A79A5B143F414CAC /* Pods-SatinSpirit (macOS)-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SatinSpirit (macOS)-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5C007B1309EA19E7E9227C371F28B1D1 /* Satin-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Satin-iOS-umbrella.h"; sourceTree = "<group>"; };
+		5CF9D447ACAE65114000760DEDDC3C39 /* Satin-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Satin-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5D00332FC599EBA906C13839C72119AD /* Satin-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Satin-macOS-dummy.m"; path = "../Satin-macOS/Satin-macOS-dummy.m"; sourceTree = "<group>"; };
+		5D01A103425E3A62712AD3D6262669C2 /* Submesh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Submesh.swift; sourceTree = "<group>"; };
+		5D59B675D7204757A54A8353F0214212 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		5D6B44219AB871A8E120A0B1BAE20EF4 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		5E93008C3C760E2BE34CF6E80DF269B4 /* Pipelines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pipelines.swift; sourceTree = "<group>"; };
+		601D5AD0873FB181D5212F5B1AA45DE0 /* Int3Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int3Parameter.swift; sourceTree = "<group>"; };
+		6124AAAA14736A6D29A23E64D8339FF4 /* Float4Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Float4Parameter.swift; sourceTree = "<group>"; };
+		620B0BAE12CC6051E54B0DC4AA3FA81B /* Geometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		620D91EB828440B644704228DCAA9D71 /* IntParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntParameter.swift; sourceTree = "<group>"; };
+		63404F8AB7AA5261C5AE019C57A15DC5 /* Textures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
+		63A4A2687D6953711D826F055C3F0896 /* Forge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Forge.framework; path = "Forge-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CAD1FFA971E9C16BCBD2027F49C0D6 /* Satin-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Satin-macOS.release.xcconfig"; path = "../Satin-macOS/Satin-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		69FDDC0A308722FF09F928EA1C65977E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6A4CF939583E682ACA31A066B299FA33 /* VertexDescriptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VertexDescriptors.swift; sourceTree = "<group>"; };
+		6A5B59638DE41F95DC19CC413D44587F /* IcoSphereGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IcoSphereGeometry.swift; sourceTree = "<group>"; };
+		6B1B60A52C5B4F42FF33AAE23D33CCC5 /* BasicColorMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicColorMaterial.swift; sourceTree = "<group>"; };
+		710F2B28696FFB1200344BA8B53F59AD /* Pods-SatinSpirit (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SatinSpirit (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		75DA2A9DD37823D7AF88B4AF3A6EFE65 /* Raycaster.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Raycaster.swift; sourceTree = "<group>"; };
+		75FC5DD5A42E4120486D115E06DC6925 /* Satin-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Satin-macOS-prefix.pch"; path = "../Satin-macOS/Satin-macOS-prefix.pch"; sourceTree = "<group>"; };
+		769EF30330FCFB5C7D5B63B998394F82 /* ParameterParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParameterParser.swift; sourceTree = "<group>"; };
+		7A7B7F6BBACC2F03A423373EAB01CA51 /* Triangulator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Triangulator.h; sourceTree = "<group>"; };
+		7C0FC0F88D2DFAF4A671DD213E99BC5C /* Bounds.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Bounds.c; sourceTree = "<group>"; };
+		7C48B769C937F5CAD3D403CD8AC253BA /* ViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ViewController.xib; path = Forge/macOS/ViewController.xib; sourceTree = "<group>"; };
+		7CB456BB2DC411C4C704F4AB5AFD5575 /* NormalColorMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NormalColorMaterial.swift; sourceTree = "<group>"; };
+		7CC85A946DA78DF925CA313D77E65459 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7DD5A2CD25646400C16CF95A72BCD99D /* Satin-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Satin-macOS.debug.xcconfig"; path = "../Satin-macOS/Satin-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		829E3EC1DAAAB0A0D84E456EA5994E49 /* Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		86D89CD16D5730BFD647C594944915F1 /* Types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		896BA664EB5F6B1CF224863B8C9BE216 /* ForgeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ForgeView.swift; sourceTree = "<group>"; };
+		897747C8FF79B4C3B6C4F9DC34C744BC /* MatCapMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatCapMaterial.swift; sourceTree = "<group>"; };
+		8AE7002678F3CFB87882DD874AAAF0D1 /* RoundedRectGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RoundedRectGeometry.swift; sourceTree = "<group>"; };
+		8BE8D918A46C7A98AF759543F27DB6F0 /* UInt32Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UInt32Parameter.swift; sourceTree = "<group>"; };
+		8CFF3F1E225E79E1998235DA00C61399 /* PerspectiveCameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PerspectiveCameraController.swift; sourceTree = "<group>"; };
+		950FAF023DE7DCE573DA6EEBA5C07B43 /* Forge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Forge.framework; path = "Forge-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95840A923C210E4A5F54153750A3BD77 /* Forge-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Forge-iOS-Info.plist"; sourceTree = "<group>"; };
+		9753AAE7FEDCCB2DAF897648D282D638 /* DepthMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DepthMaterial.swift; sourceTree = "<group>"; };
+		984970493DF3C52A1E1CE6411F751402 /* Satin-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Satin-iOS-dummy.m"; sourceTree = "<group>"; };
+		997D7300693230A1F8D17AE3DF68E818 /* CircleGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircleGeometry.swift; sourceTree = "<group>"; };
+		998AEFECD5D49233D44E333F48C058B2 /* Pods-SatinSpirit (iOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SatinSpirit (iOS)-dummy.m"; sourceTree = "<group>"; };
+		99AAEB31B3922D5FFA4CAC08C327DF94 /* MetalFileCompiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MetalFileCompiler.swift; sourceTree = "<group>"; };
+		9B08BA00BAE802B125C191CFC598FCB7 /* Satin-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Satin-iOS-prefix.pch"; sourceTree = "<group>"; };
+		9C5D494A1A7CF25BAFD6F98928DE6908 /* ParameterGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParameterGroup.swift; sourceTree = "<group>"; };
+		9C896B00B3A809D21D952370C138A834 /* Triangulator.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Triangulator.c; sourceTree = "<group>"; };
+		9D9316660D565F0B4A6E0C10FE58E8CB /* BasicTextureMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicTextureMaterial.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA9650B9BE321B55EDDDEBDE1EC1427 /* Int4Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int4Parameter.swift; sourceTree = "<group>"; };
+		9F1E12B719293522CFB763E77BAA51C3 /* ArcGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArcGeometry.swift; sourceTree = "<group>"; };
+		9F22FDA6F1C9628A8B131E1B1FEAB648 /* DoubleParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DoubleParameter.swift; sourceTree = "<group>"; };
+		9FCB9BF425B34685B29FDC61ECCB9E72 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		A2AAE4BDFED8889F1CE590A23BF154D7 /* Forge-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Forge-macOS.debug.xcconfig"; path = "../Forge-macOS/Forge-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A3F1531BCE1D3E7941ED3821506EE07F /* BasicPointMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicPointMaterial.swift; sourceTree = "<group>"; };
+		A4ACAE92C6FB6A118D3B445071537599 /* Pods-SatinSpirit (macOS)-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SatinSpirit (macOS)-dummy.m"; sourceTree = "<group>"; };
+		A4FF00C84B85A2D882D58C117EC8D3BE /* SkyboxMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkyboxMaterial.swift; sourceTree = "<group>"; };
+		A7669B308DD2E330603470ED82A90983 /* BoolParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BoolParameter.swift; sourceTree = "<group>"; };
+		A7B040AE360EA7FDEE7789F15320E1B3 /* SquircleGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SquircleGeometry.swift; sourceTree = "<group>"; };
+		A7F77F83629086FAB6D8BDAEE2E72C5B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A9C43DC91FA14744923DC76CDE8312B0 /* ExtrudedTextGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtrudedTextGeometry.swift; sourceTree = "<group>"; };
+		AABE4D26D65B282027175F20DC3EA54E /* Forge-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Forge-macOS.modulemap"; path = "../Forge-macOS/Forge-macOS.modulemap"; sourceTree = "<group>"; };
+		AAF222E6ED84B371E14EF55C24769DB4 /* SkyboxGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SkyboxGeometry.swift; sourceTree = "<group>"; };
+		AC2811C5C63DAA8FFC9EFF338E3EF438 /* Renderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		AC4A61DF06E503525C71C6F4244D1C7C /* Forge-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Forge-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AC9B6D5EE711AD3D1BE723E07B5A2D88 /* Bezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Bezier.h; sourceTree = "<group>"; };
+		AD8D8B644C29C5AAA1CF513078C92AB4 /* QuadGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuadGeometry.swift; sourceTree = "<group>"; };
+		B14F173132D8D6AC3DC1441DD2CBB86A /* UniformBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UniformBuffer.swift; sourceTree = "<group>"; };
+		B2076B9A68065163A28E600CE00621DC /* Pods-SatinSpirit (iOS)-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SatinSpirit (iOS)-frameworks.sh"; sourceTree = "<group>"; };
+		B2F0D5CE6982BD54C0FAF317CF9BFC76 /* LiveMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiveMaterial.swift; sourceTree = "<group>"; };
+		B3757A4F2E6A6220BD31048379CD5E27 /* UVColorMaterial.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UVColorMaterial.swift; sourceTree = "<group>"; };
+		BADE215B103F7254A5EB0264ABB6FC00 /* Satin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Satin.framework; path = "Satin-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB126FEB43B505BDE6CCB39D0AC0B551 /* PlaneGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlaneGeometry.swift; sourceTree = "<group>"; };
+		BD44FCD45D1466A1D91ADB8E7B6CF8E7 /* Forge-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Forge-macOS-dummy.m"; path = "../Forge-macOS/Forge-macOS-dummy.m"; sourceTree = "<group>"; };
+		BD7E4B1B611200DE83014B1359F13628 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		BDE19197F9A429D5F9B7D7792D99224D /* FileWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
+		BE0D95DF097863F4DE910CD6AF7FBFD3 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C05D561CAC8CEA224076D278C51625E7 /* Geometry.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Geometry.c; sourceTree = "<group>"; };
+		C1E5A360B53E02A5CF0AEC8195DBC2DF /* Forge-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Forge-macOS-Info.plist"; path = "../Forge-macOS/Forge-macOS-Info.plist"; sourceTree = "<group>"; };
+		C53DEDE65E8CBDA8BEE9A5A0E1521125 /* TextureComputeSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextureComputeSystem.swift; sourceTree = "<group>"; };
+		C5A20A93154450D024E1FB519B2E71C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C6C62EBA3513AC689402FB3209959A96 /* Pods-SatinSpirit (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SatinSpirit (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		C74432D375023CF0E5A12021DE0AA51C /* Generators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Generators.h; sourceTree = "<group>"; };
+		C909FAB37BD2B37B192BACC940665951 /* GesturalCameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GesturalCameraController.swift; sourceTree = "<group>"; };
+		C9BA1425991C1039F340048BEE47F7DB /* Camera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		CA5CCD20016CF45261CE165AEE7E6D93 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		CB2736A4F3F9558A444000A76DCFF5A3 /* Pods-SatinSpirit (iOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SatinSpirit (iOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBDDD0AD10E1CC54D0538C8085809124 /* FloatParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatParameter.swift; sourceTree = "<group>"; };
+		CDCBF5C8DF7BB1E76B86D73983B01FCB /* Renderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		D1563BCBECA3D279DB6210D54DF85C2D /* Pods-SatinSpirit (macOS)-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SatinSpirit (macOS)-acknowledgements.plist"; sourceTree = "<group>"; };
+		D444CF96CF297C4BABE6C5A494AEE898 /* Pods-SatinSpirit (macOS)-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SatinSpirit (macOS)-Info.plist"; sourceTree = "<group>"; };
+		D9A08F8484A95DA9E9EA7F495E3B04B6 /* PerspectiveCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PerspectiveCamera.swift; sourceTree = "<group>"; };
+		DAB6CBDE884F2567421B593D61C3AFB7 /* Forge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Forge.h; path = Forge/Forge.h; sourceTree = "<group>"; };
+		DB9A96E37A8CAB992E49E7B5F36758D5 /* Forge-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Forge-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DD595E15C554FA0DEE44099C0E4E2DD6 /* BufferComputeSystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BufferComputeSystem.swift; sourceTree = "<group>"; };
+		DDF42AFD9AA5F74C5367E60CE018217D /* FPSCameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPSCameraController.swift; sourceTree = "<group>"; };
+		E0E3BC35349229E44C92506B86C75996 /* OrthographicCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OrthographicCamera.swift; sourceTree = "<group>"; };
+		E178668724C8C345C23E8DDB870F6697 /* AnyParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AnyParameter.swift; sourceTree = "<group>"; };
+		E2564332DD0414EC7BB33C8DCBA197A2 /* Forge-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Forge-macOS-prefix.pch"; path = "../Forge-macOS/Forge-macOS-prefix.pch"; sourceTree = "<group>"; };
+		E30174EF88D19967647B715DFB79D6BA /* Forge-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Forge-iOS-dummy.m"; sourceTree = "<group>"; };
+		E52BB01EDFC389418F6A69A3ADB16FA6 /* Int2Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Int2Parameter.swift; sourceTree = "<group>"; };
+		E5EB2471FA6E6417DF183E8DD3D1C6A0 /* Pods_SatinSpirit__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SatinSpirit__iOS_.framework; path = "Pods-SatinSpirit (iOS).framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E691425A70A7ACB9E425196017389691 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E7FD3DBE598A22DBB218B7A97CE91B8F /* PointGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PointGeometry.swift; sourceTree = "<group>"; };
+		E8BA154BDA6DCD808C439BF8B447D2FF /* Material.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		EF60F6395BEBAF7942A25FB48F41BC6C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F1355B9B0EB558464CF566029DD79A9C /* CameraController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		F247F1F95CA707ECBE27D9947C601AB7 /* Satin-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Satin-macOS-Info.plist"; path = "../Satin-macOS/Satin-macOS-Info.plist"; sourceTree = "<group>"; };
+		F2A34B6995F1816954A10BF8797A77B5 /* ViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ViewController.xib; path = Forge/iOS/ViewController.xib; sourceTree = "<group>"; };
+		F415CAA4B08B5DD5CBBAEF2F832E2D10 /* StringParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringParameter.swift; sourceTree = "<group>"; };
+		F698DB3B289C2A40F7ABAE67C8AD0E7C /* Paths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		F83FE9E391E9A8BDB701C1DB6E37A4EE /* Geometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		FB02516D43EE0A5475B19EAE1066CF0B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		FB330EFFD792A96447AA0A93F00B0E6E /* Forge-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Forge-macOS-umbrella.h"; path = "../Forge-macOS/Forge-macOS-umbrella.h"; sourceTree = "<group>"; };
+		FB94B128DB0CA66A810BA311E9147645 /* Pods-SatinSpirit (iOS).modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SatinSpirit (iOS).modulemap"; sourceTree = "<group>"; };
+		FC41B4D29A748942A537616FF676C4CF /* Forge-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Forge-iOS-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		641D2DCF85D6363CC17CAE8EEFD23525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EB94D80B95C66D046DE1EDF92D0CA7 /* Cocoa.framework in Frameworks */,
+				09BAB231EBEF17A75F93541CDCE99719 /* Metal.framework in Frameworks */,
+				24C802890DE232BEE8D5EDEBE62BB40F /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B2CB51ADD345F61A56CED4D2F045555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA4D67558A7775521F48F196867192E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA9C8793382C5265441D315B785C149 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A09040A4A1A90A2AFA6A1E24D7883F26 /* Foundation.framework in Frameworks */,
+				B7A747850B0E44A4019FFD26640EECBF /* Metal.framework in Frameworks */,
+				CAFF076991310F9371F6D96C4E971220 /* MetalKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		997EEF2DEC05F747276E56DF4514AB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974EEB14D06EA35251E18A8B38403587 /* Cocoa.framework in Frameworks */,
+				4A8AA124428E061676778A461934492F /* Metal.framework in Frameworks */,
+				58BB4C1FF7138AF02A90805FEA7229EC /* MetalKit.framework in Frameworks */,
+				A6E25EBC3060AB02CBEF26CA767FFC4A /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81BC3FFC7E39F5030781674FD743C04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E196988604B2166F3CB785D78CD88E23 /* Foundation.framework in Frameworks */,
+				8C4C85FD06D197CAB87F4795C6B6C4EE /* Metal.framework in Frameworks */,
+				8B85189431F346CCB7EF8E1E02DFF2D5 /* MetalKit.framework in Frameworks */,
+				58273710A6ACDBA874E822A5E7B08C3B /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AB51E1C10DE98B989EA4D99D70102C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF965567F1025217C7223FFE595389F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02BB72472EA07E99121D1799E5273F07 /* Forge */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6CBDE884F2567421B593D61C3AFB7 /* Forge.h */,
+				F2A34B6995F1816954A10BF8797A77B5 /* ViewController.xib */,
+				7C48B769C937F5CAD3D403CD8AC253BA /* ViewController.xib */,
+				F31535002D50CAC66DEDA37C6250F939 /* iOS */,
+				9D2CB24F4EB81E73465185812B7F597C /* macOS */,
+				4F58F5016976564ED939D4A957FD4795 /* Pod */,
+				C722ECDEA6C114A7A47C31CBF1EE024D /* Shared */,
+				60B85BD09A545F0DAACE947EB8192016 /* Support Files */,
+			);
+			name = Forge;
+			path = "../../../Hi-Rez/Forge";
+			sourceTree = "<group>";
+		};
+		04C7A39E24A8828ED0EDEF49D6C4528A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				732E1D9DF9B6F12F7D55DD6FCD6B276B /* Pods-SatinSpirit (iOS) */,
+				4325D5A4B42A0E3405F2431CF51BE1D4 /* Pods-SatinSpirit (macOS) */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		09FE7ED64FFED2AF504CC79FBEFEEC54 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				9F1E12B719293522CFB763E77BAA51C3 /* ArcGeometry.swift */,
+				4C5FE1270BB8C42F0D90F98702CCAC3A /* BoxGeometry.swift */,
+				52A558B57AEBF89068E7F8C8D38FD72F /* CapsuleGeometry.swift */,
+				997D7300693230A1F8D17AE3DF68E818 /* CircleGeometry.swift */,
+				1525F4869180D2EFB3A45244078099BE /* ConeGeometry.swift */,
+				216B3F6EFE3EA837AE0B1DFFE4048A6A /* CylinderGeometry.swift */,
+				3CB3AA919887076173B9AE43E75CA19E /* ExtrudedRoundedRectGeometry.swift */,
+				A9C43DC91FA14744923DC76CDE8312B0 /* ExtrudedTextGeometry.swift */,
+				620B0BAE12CC6051E54B0DC4AA3FA81B /* Geometry.swift */,
+				6A5B59638DE41F95DC19CC413D44587F /* IcoSphereGeometry.swift */,
+				1B12737F4F2D5F6D76202804C9F46D3D /* ParametricGeometry.swift */,
+				BB126FEB43B505BDE6CCB39D0AC0B551 /* PlaneGeometry.swift */,
+				E7FD3DBE598A22DBB218B7A97CE91B8F /* PointGeometry.swift */,
+				AD8D8B644C29C5AAA1CF513078C92AB4 /* QuadGeometry.swift */,
+				8AE7002678F3CFB87882DD874AAAF0D1 /* RoundedRectGeometry.swift */,
+				AAF222E6ED84B371E14EF55C24769DB4 /* SkyboxGeometry.swift */,
+				26D4A9C9B233D0106A939F21D6BBFF8F /* SphereGeometry.swift */,
+				A7B040AE360EA7FDEE7789F15320E1B3 /* SquircleGeometry.swift */,
+				05ABDFC11E1A0FE60BCB81A1CF3568DC /* TextGeometry.swift */,
+				026D7F01B1EE5668EFE5F879B9901DB8 /* TorusGeometry.swift */,
+				25007E425A2F6DEFEE4C1BDF8488A044 /* TriangleGeometry.swift */,
+			);
+			name = Geometry;
+			path = Source/Geometry;
+			sourceTree = "<group>";
+		};
+		0EB441C429E9E417695FA2AD95CF58B0 /* PostProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				006A1C654A4679398C48F07AF8F3B8E9 /* PostProcessor.swift */,
+			);
+			name = PostProcessor;
+			path = Source/PostProcessor;
+			sourceTree = "<group>";
+		};
+		1CAA10235FC03DCBA2D897DAAA55B00A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7CC85A946DA78DF925CA313D77E65459 /* Foundation.framework */,
+				314E803F7FC8B59297A94D212C1957FD /* Metal.framework */,
+				16C79E5313D773E83EC8F76F3B2359FC /* MetalKit.framework */,
+				FB02516D43EE0A5475B19EAE1066CF0B /* SwiftUI.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1DA4524977FEC1C8F5D6FB81AC1E98EB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C14722418A7FFBB204397CFF0862F0E /* Context.swift */,
+				0A7B07EB8A12E5D7EF8E5709CE1463BD /* Mesh.swift */,
+				55C8407247B813576423666E2FA2C831 /* Object.swift */,
+				75DA2A9DD37823D7AF88B4AF3A6EFE65 /* Raycaster.swift */,
+				5D01A103425E3A62712AD3D6262669C2 /* Submesh.swift */,
+			);
+			name = Core;
+			path = Source/Core;
+			sourceTree = "<group>";
+		};
+		1E0647647D49F4553BE79AA44E7B4FED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				582E9279EB10AC0D658FB16F50D84919 /* Buffer.swift */,
+				BDE19197F9A429D5F9B7D7792D99224D /* FileWatcher.swift */,
+				BE0D95DF097863F4DE910CD6AF7FBFD3 /* Helpers.swift */,
+				99AAEB31B3922D5FFA4CAC08C327DF94 /* MetalFileCompiler.swift */,
+				769EF30330FCFB5C7D5B63B998394F82 /* ParameterParser.swift */,
+				F698DB3B289C2A40F7ABAE67C8AD0E7C /* Paths.swift */,
+				5E93008C3C760E2BE34CF6E80DF269B4 /* Pipelines.swift */,
+				63404F8AB7AA5261C5AE019C57A15DC5 /* Textures.swift */,
+				B14F173132D8D6AC3DC1441DD2CBB86A /* UniformBuffer.swift */,
+				6A4CF939583E682ACA31A066B299FA33 /* VertexDescriptors.swift */,
+			);
+			name = Utilities;
+			path = Source/Utilities;
+			sourceTree = "<group>";
+		};
+		20648D09007173EF98A49FA27EE3084B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				47FF93399C64DE4D2E632DEBDA744B9E /* Satin-iOS.modulemap */,
+				984970493DF3C52A1E1CE6411F751402 /* Satin-iOS-dummy.m */,
+				1E8453BBAE9EE72AAC5729B4349B00D1 /* Satin-iOS-Info.plist */,
+				9B08BA00BAE802B125C191CFC598FCB7 /* Satin-iOS-prefix.pch */,
+				5C007B1309EA19E7E9227C371F28B1D1 /* Satin-iOS-umbrella.h */,
+				52C7817AA42939A8B80E3642617B2BB2 /* Satin-iOS.debug.xcconfig */,
+				5CF9D447ACAE65114000760DEDDC3C39 /* Satin-iOS.release.xcconfig */,
+				173ABA2277BE0F9E080A427148D9E69E /* Satin-macOS.modulemap */,
+				5D00332FC599EBA906C13839C72119AD /* Satin-macOS-dummy.m */,
+				F247F1F95CA707ECBE27D9947C601AB7 /* Satin-macOS-Info.plist */,
+				75FC5DD5A42E4120486D115E06DC6925 /* Satin-macOS-prefix.pch */,
+				43EAB6CE9902FFDBB3E2AAAFD7FCBF1C /* Satin-macOS-umbrella.h */,
+				7DD5A2CD25646400C16CF95A72BCD99D /* Satin-macOS.debug.xcconfig */,
+				64CAD1FFA971E9C16BCBD2027F49C0D6 /* Satin-macOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../SatinSpiritDeck/SatinSpirit/Pods/Target Support Files/Satin-iOS";
+			sourceTree = "<group>";
+		};
+		2AB1BA614F78F824E415FD2267596F79 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DDF42AFD9AA5F74C5367E60CE018217D /* FPSCameraController.swift */,
+				C909FAB37BD2B37B192BACC940665951 /* GesturalCameraController.swift */,
+			);
+			name = macOS;
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		32319E1C414C64F18A0037F126ECE9CB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C5A20A93154450D024E1FB519B2E71C4 /* LICENSE */,
+				E691425A70A7ACB9E425196017389691 /* README.md */,
+				4ADC401C1F224D3F05661C90E444F6A6 /* Satin.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3B50EAF5B72EF725B58137472745B7A3 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				24D78B632912D6AD80BFC26A8C6CC9E1 /* Bezier.c */,
+				AC9B6D5EE711AD3D1BE723E07B5A2D88 /* Bezier.h */,
+				7C0FC0F88D2DFAF4A671DD213E99BC5C /* Bounds.c */,
+				458BDD0401B81C64A0787BF397DC0AC2 /* Bounds.h */,
+				047C21EAD76DA612A509C237F83A6433 /* Generators.c */,
+				C74432D375023CF0E5A12021DE0AA51C /* Generators.h */,
+				C05D561CAC8CEA224076D278C51625E7 /* Geometry.c */,
+				F83FE9E391E9A8BDB701C1DB6E37A4EE /* Geometry.h */,
+				5D59B675D7204757A54A8353F0214212 /* Math.swift */,
+				036EFF87DDC8DE34BF8D3D0B6FBC687B /* Ray.swift */,
+				9C896B00B3A809D21D952370C138A834 /* Triangulator.c */,
+				7A7B7F6BBACC2F03A423373EAB01CA51 /* Triangulator.h */,
+			);
+			name = Math;
+			path = Source/Math;
+			sourceTree = "<group>";
+		};
+		40CA97430433CD5993498C7C44E97263 /* Compute */ = {
+			isa = PBXGroup;
+			children = (
+				DD595E15C554FA0DEE44099C0E4E2DD6 /* BufferComputeSystem.swift */,
+				32DBCA70803C56DD967EAC14FECD6100 /* MultipleTextureComputeSystem.swift */,
+				C53DEDE65E8CBDA8BEE9A5A0E1521125 /* TextureComputeSystem.swift */,
+			);
+			name = Compute;
+			path = Source/Compute;
+			sourceTree = "<group>";
+		};
+		41E87938F7C94688E60A6B76D6FA934A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5D6B44219AB871A8E120A0B1BAE20EF4 /* Bundle+Extensions.swift */,
+				5156127D77373ADE31A1C34BB6132E13 /* Simd+Extensions.swift */,
+				BD7E4B1B611200DE83014B1359F13628 /* String+Extensions.swift */,
+			);
+			name = Extensions;
+			path = Source/Extensions;
+			sourceTree = "<group>";
+		};
+		4325D5A4B42A0E3405F2431CF51BE1D4 /* Pods-SatinSpirit (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				2A3960B4C64FC1D6B23A20CC273F16B1 /* Pods-SatinSpirit (macOS).modulemap */,
+				5A9ABDEE345D23A7A79A5B143F414CAC /* Pods-SatinSpirit (macOS)-acknowledgements.markdown */,
+				D1563BCBECA3D279DB6210D54DF85C2D /* Pods-SatinSpirit (macOS)-acknowledgements.plist */,
+				A4ACAE92C6FB6A118D3B445071537599 /* Pods-SatinSpirit (macOS)-dummy.m */,
+				38D1113AAD6F4C33B1C48652DB5397D0 /* Pods-SatinSpirit (macOS)-frameworks.sh */,
+				D444CF96CF297C4BABE6C5A494AEE898 /* Pods-SatinSpirit (macOS)-Info.plist */,
+				3D9C75B15F09F48841C15BB77599A95C /* Pods-SatinSpirit (macOS)-umbrella.h */,
+				C6C62EBA3513AC689402FB3209959A96 /* Pods-SatinSpirit (macOS).debug.xcconfig */,
+				710F2B28696FFB1200344BA8B53F59AD /* Pods-SatinSpirit (macOS).release.xcconfig */,
+			);
+			name = "Pods-SatinSpirit (macOS)";
+			path = "Target Support Files/Pods-SatinSpirit (macOS)";
+			sourceTree = "<group>";
+		};
+		4F58F5016976564ED939D4A957FD4795 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3D08FC89AFF4D3AFED0464BDCB250249 /* Forge.podspec */,
+				A7F77F83629086FAB6D8BDAEE2E72C5B /* LICENSE */,
+				69FDDC0A308722FF09F928EA1C65977E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5527E058B07AC138422C4EE7E90C3B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAA10235FC03DCBA2D897DAAA55B00A /* iOS */,
+				BD0CA91BC58BE844253650A19398FBA3 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		599B41725D54A02E7FEFBE848836878D /* CameraControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1355B9B0EB558464CF566029DD79A9C /* CameraController.swift */,
+				14A66347F543C38D6FEC5A0E28646C41 /* OrthographicCameraController.swift */,
+				8CFF3F1E225E79E1998235DA00C61399 /* PerspectiveCameraController.swift */,
+				2AB1BA614F78F824E415FD2267596F79 /* macOS */,
+			);
+			name = CameraControllers;
+			path = Source/CameraControllers;
+			sourceTree = "<group>";
+		};
+		60B85BD09A545F0DAACE947EB8192016 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58009406904F22AAC119504CE36E4A04 /* Forge-iOS.modulemap */,
+				E30174EF88D19967647B715DFB79D6BA /* Forge-iOS-dummy.m */,
+				95840A923C210E4A5F54153750A3BD77 /* Forge-iOS-Info.plist */,
+				FC41B4D29A748942A537616FF676C4CF /* Forge-iOS-prefix.pch */,
+				47510EC9CA00089DC03DA1ABB6561A86 /* Forge-iOS-umbrella.h */,
+				DB9A96E37A8CAB992E49E7B5F36758D5 /* Forge-iOS.debug.xcconfig */,
+				AC4A61DF06E503525C71C6F4244D1C7C /* Forge-iOS.release.xcconfig */,
+				AABE4D26D65B282027175F20DC3EA54E /* Forge-macOS.modulemap */,
+				BD44FCD45D1466A1D91ADB8E7B6CF8E7 /* Forge-macOS-dummy.m */,
+				C1E5A360B53E02A5CF0AEC8195DBC2DF /* Forge-macOS-Info.plist */,
+				E2564332DD0414EC7BB33C8DCBA197A2 /* Forge-macOS-prefix.pch */,
+				FB330EFFD792A96447AA0A93F00B0E6E /* Forge-macOS-umbrella.h */,
+				A2AAE4BDFED8889F1CE590A23BF154D7 /* Forge-macOS.debug.xcconfig */,
+				456EDF0E402F20ADE98E0BCA4816EA3D /* Forge-macOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../SatinSpiritDeck/SatinSpirit/Pods/Target Support Files/Forge-iOS";
+			sourceTree = "<group>";
+		};
+		732E1D9DF9B6F12F7D55DD6FCD6B276B /* Pods-SatinSpirit (iOS) */ = {
+			isa = PBXGroup;
+			children = (
+				FB94B128DB0CA66A810BA311E9147645 /* Pods-SatinSpirit (iOS).modulemap */,
+				2799FCA38BA1ADE77EF3BBDFB263A20B /* Pods-SatinSpirit (iOS)-acknowledgements.markdown */,
+				CB2736A4F3F9558A444000A76DCFF5A3 /* Pods-SatinSpirit (iOS)-acknowledgements.plist */,
+				998AEFECD5D49233D44E333F48C058B2 /* Pods-SatinSpirit (iOS)-dummy.m */,
+				B2076B9A68065163A28E600CE00621DC /* Pods-SatinSpirit (iOS)-frameworks.sh */,
+				310D5720A0E27BA7287F8E09E8720F7C /* Pods-SatinSpirit (iOS)-Info.plist */,
+				0D8620364E7AE84B85557B8F0A4A6427 /* Pods-SatinSpirit (iOS)-umbrella.h */,
+				4D949F26120C5F3B971BD1F87E3DC786 /* Pods-SatinSpirit (iOS).debug.xcconfig */,
+				4F7EE93C0ADFECE56A9ACF32243EED39 /* Pods-SatinSpirit (iOS).release.xcconfig */,
+			);
+			name = "Pods-SatinSpirit (iOS)";
+			path = "Target Support Files/Pods-SatinSpirit (iOS)";
+			sourceTree = "<group>";
+		};
+		73377C2C645E83CC05207FD3E6464074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				950FAF023DE7DCE573DA6EEBA5C07B43 /* Forge.framework */,
+				63A4A2687D6953711D826F055C3F0896 /* Forge.framework */,
+				E5EB2471FA6E6417DF183E8DD3D1C6A0 /* Pods_SatinSpirit__iOS_.framework */,
+				03B1217F8F0F4D5DC07773E874CF4F71 /* Pods_SatinSpirit__macOS_.framework */,
+				BADE215B103F7254A5EB0264ABB6FC00 /* Satin.framework */,
+				0EFA28CE49BE40056A295D0D7487F55E /* Satin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F053262E84E159B14EA5C2A59C0E1A /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				4B5EC375050B7AB2A74A5E0DF034FDCC /* Constants.swift */,
+				4056E7C17C1967FBF9BE47383C29A927 /* Types.c */,
+				86D89CD16D5730BFD647C594944915F1 /* Types.h */,
+				2F40D070B5F9688DB0FB8F7A9B1AA640 /* Vertex.swift */,
+				1FAC1BA5D9C180B2603F6249935CB360 /* VertexUniforms.swift */,
+			);
+			name = Types;
+			path = Source/Types;
+			sourceTree = "<group>";
+		};
+		9D2CB24F4EB81E73465185812B7F597C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				16BFA76AB0980D8CE21DEE4540A1CC6F /* View.swift */,
+				4F2D4D2EFD6803878F06FFA5C7A97BC7 /* ViewController.swift */,
+			);
+			name = macOS;
+			path = Forge/macOS;
+			sourceTree = "<group>";
+		};
+		9EB6C50EBDF88B2EB122626E7846C545 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B60A52C5B4F42FF33AAE23D33CCC5 /* BasicColorMaterial.swift */,
+				58FAA3B203225B35347C505D092DC362 /* BasicDiffuseMaterial.swift */,
+				A3F1531BCE1D3E7941ED3821506EE07F /* BasicPointMaterial.swift */,
+				9D9316660D565F0B4A6E0C10FE58E8CB /* BasicTextureMaterial.swift */,
+				9753AAE7FEDCCB2DAF897648D282D638 /* DepthMaterial.swift */,
+				B2F0D5CE6982BD54C0FAF317CF9BFC76 /* LiveMaterial.swift */,
+				897747C8FF79B4C3B6C4F9DC34C744BC /* MatCapMaterial.swift */,
+				E8BA154BDA6DCD808C439BF8B447D2FF /* Material.swift */,
+				7CB456BB2DC411C4C704F4AB5AFD5575 /* NormalColorMaterial.swift */,
+				A4FF00C84B85A2D882D58C117EC8D3BE /* SkyboxMaterial.swift */,
+				B3757A4F2E6A6220BD31048379CD5E27 /* UVColorMaterial.swift */,
+			);
+			name = Materials;
+			path = Source/Materials;
+			sourceTree = "<group>";
+		};
+		A689B9A98E7A42A1EF1A7C88FFF9B290 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02BB72472EA07E99121D1799E5273F07 /* Forge */,
+				CAB36C7E0242FA61765C791F2D507CCE /* Satin */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ACE395C2C179E0B7EE8667B7F15A6C74 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				E178668724C8C345C23E8DDB870F6697 /* AnyParameter.swift */,
+				A7669B308DD2E330603470ED82A90983 /* BoolParameter.swift */,
+				9F22FDA6F1C9628A8B131E1B1FEAB648 /* DoubleParameter.swift */,
+				04808E51EA295E90B9140170F6CAAE4E /* FileParameter.swift */,
+				30373EFC2B2A688079E278FA35B2CB11 /* Float2Parameter.swift */,
+				2EA985B8CE8CB6578FA79AF10144F9CB /* Float3Parameter.swift */,
+				6124AAAA14736A6D29A23E64D8339FF4 /* Float4Parameter.swift */,
+				CBDDD0AD10E1CC54D0538C8085809124 /* FloatParameter.swift */,
+				E52BB01EDFC389418F6A69A3ADB16FA6 /* Int2Parameter.swift */,
+				601D5AD0873FB181D5212F5B1AA45DE0 /* Int3Parameter.swift */,
+				9EA9650B9BE321B55EDDDEBDE1EC1427 /* Int4Parameter.swift */,
+				620D91EB828440B644704228DCAA9D71 /* IntParameter.swift */,
+				089CD3EAB84110BF57DE4C6E6EDD01B5 /* PackedFloat3Parameter.swift */,
+				829E3EC1DAAAB0A0D84E456EA5994E49 /* Parameter.swift */,
+				9C5D494A1A7CF25BAFD6F98928DE6908 /* ParameterGroup.swift */,
+				F415CAA4B08B5DD5CBBAEF2F832E2D10 /* StringParameter.swift */,
+				8BE8D918A46C7A98AF759543F27DB6F0 /* UInt32Parameter.swift */,
+			);
+			name = Parameters;
+			path = Source/Parameters;
+			sourceTree = "<group>";
+		};
+		BD0CA91BC58BE844253650A19398FBA3 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				EF60F6395BEBAF7942A25FB48F41BC6C /* Cocoa.framework */,
+				9FCB9BF425B34685B29FDC61ECCB9E72 /* Metal.framework */,
+				00E8BFB97C9B8A978478289E2C827635 /* MetalKit.framework */,
+				CA5CCD20016CF45261CE165AEE7E6D93 /* SwiftUI.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		C722ECDEA6C114A7A47C31CBF1EE024D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				896BA664EB5F6B1CF224863B8C9BE216 /* ForgeView.swift */,
+				AC2811C5C63DAA8FFC9EFF338E3EF438 /* Renderer.swift */,
+			);
+			name = Shared;
+			path = Forge/Shared;
+			sourceTree = "<group>";
+		};
+		CAB36C7E0242FA61765C791F2D507CCE /* Satin */ = {
+			isa = PBXGroup;
+			children = (
+				54002F9D5BF01EC61A6A9AB1E21BE399 /* Pipelines */,
+				0A8FD11993A8871987432C0019A160BA /* Satin.h */,
+				599B41725D54A02E7FEFBE848836878D /* CameraControllers */,
+				DCD700E2EBDA9EC28B8C96ED1283E1CB /* Cameras */,
+				40CA97430433CD5993498C7C44E97263 /* Compute */,
+				1DA4524977FEC1C8F5D6FB81AC1E98EB /* Core */,
+				41E87938F7C94688E60A6B76D6FA934A /* Extensions */,
+				09FE7ED64FFED2AF504CC79FBEFEEC54 /* Geometry */,
+				9EB6C50EBDF88B2EB122626E7846C545 /* Materials */,
+				3B50EAF5B72EF725B58137472745B7A3 /* Math */,
+				ACE395C2C179E0B7EE8667B7F15A6C74 /* Parameters */,
+				32319E1C414C64F18A0037F126ECE9CB /* Pod */,
+				0EB441C429E9E417695FA2AD95CF58B0 /* PostProcessor */,
+				EEAB073F6D3E6BF64CCB08BEE6C16BAC /* Renderer */,
+				20648D09007173EF98A49FA27EE3084B /* Support Files */,
+				84F053262E84E159B14EA5C2A59C0E1A /* Types */,
+				1E0647647D49F4553BE79AA44E7B4FED /* Utilities */,
+			);
+			name = Satin;
+			path = "../../../Hi-Rez/Satin";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A689B9A98E7A42A1EF1A7C88FFF9B290 /* Development Pods */,
+				5527E058B07AC138422C4EE7E90C3B53 /* Frameworks */,
+				73377C2C645E83CC05207FD3E6464074 /* Products */,
+				04C7A39E24A8828ED0EDEF49D6C4528A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD700E2EBDA9EC28B8C96ED1283E1CB /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				C9BA1425991C1039F340048BEE47F7DB /* Camera.swift */,
+				E0E3BC35349229E44C92506B86C75996 /* OrthographicCamera.swift */,
+				D9A08F8484A95DA9E9EA7F495E3B04B6 /* PerspectiveCamera.swift */,
+			);
+			name = Cameras;
+			path = Source/Cameras;
+			sourceTree = "<group>";
+		};
+		EEAB073F6D3E6BF64CCB08BEE6C16BAC /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				CDCBF5C8DF7BB1E76B86D73983B01FCB /* Renderer.swift */,
+			);
+			name = Renderer;
+			path = Source/Renderer;
+			sourceTree = "<group>";
+		};
+		F31535002D50CAC66DEDA37C6250F939 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3C6D0A606BA2014C4A1CBBC5AF37F212 /* ViewController.swift */,
+			);
+			name = iOS;
+			path = Forge/iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5004F2F5CEAF86CBB32AF5E79335D9C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9651D14173DBA98281BF49B544E70E /* Bezier.h in Headers */,
+				3A4B3BE0BAB4C0AADDAAFBD08F26D161 /* Bounds.h in Headers */,
+				ADC1E92379E3FDB377543D70D3D0FA3D /* Generators.h in Headers */,
+				9D9CC10B7A8D4D212D812AE73EBADAE2 /* Geometry.h in Headers */,
+				ABA84ADE67E53341CC67044152F16E5B /* Satin-macOS-umbrella.h in Headers */,
+				2D72945ED174CD924ED00985FDE90465 /* Satin.h in Headers */,
+				A9F5C46C7453F5A90B21C50371F23D57 /* Triangulator.h in Headers */,
+				A96A965CB41F9E7BFEDFDBE85CA97615 /* Types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E10A19E214E7486222971B3E3C49DA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A1B739339FF3E401DBED00C628E7AB /* Forge-macOS-umbrella.h in Headers */,
+				C6A56E020C319E8F8F8536A5019985A1 /* Forge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		871D906688989619182E809BBDAC804E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6927D3D2BF69FB785F9667411F7DEC7 /* Forge-iOS-umbrella.h in Headers */,
+				2A3A474DFCCE7F2EB05DB7AF9A5C934E /* Forge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB5E647845102438DAF1A6C1DB786A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7146CF9B64F4B504064BFFFAAE1FCE53 /* Pods-SatinSpirit (macOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48F86735A671E164DDE42DCC2489D49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4975187CDADB89C4AF5C940DCB7AFDDE /* Pods-SatinSpirit (iOS)-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE74D13291D901B0DB46C06107B222E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD3E4523E8171DCCF084BE8930158BF /* Bezier.h in Headers */,
+				1ED398AD4655393F308887156CAF79A2 /* Bounds.h in Headers */,
+				4CC0D6384E1B64E31E471B9D5381A3F6 /* Generators.h in Headers */,
+				514907874D4593ED4C01D7A7807CEBEF /* Geometry.h in Headers */,
+				D9998ABDB8A4A50AD7AC8BB480AFBB0B /* Satin-iOS-umbrella.h in Headers */,
+				128F0CF085DA4EAAE38115A594D8BA6D /* Satin.h in Headers */,
+				33096D2E0BAB5CE2C7E085E3B73B871F /* Triangulator.h in Headers */,
+				AE05832B5B725A8E232DB1C3F3D0C3F8 /* Types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		259CA504A77E7F7838AB708EA721FBF4 /* Forge-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F2EC8DC45082C38F191137F5CB4EBA6 /* Build configuration list for PBXNativeTarget "Forge-iOS" */;
+			buildPhases = (
+				871D906688989619182E809BBDAC804E /* Headers */,
+				863FFAACB6E81FEED8F4D2684DE4192C /* Sources */,
+				C81BC3FFC7E39F5030781674FD743C04 /* Frameworks */,
+				427ADE1269032D97D8572D4F9C3F4F4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forge-iOS";
+			productName = "Forge-iOS";
+			productReference = 950FAF023DE7DCE573DA6EEBA5C07B43 /* Forge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4726CE7FEC99998105B5D295821647AE /* Satin-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B93898C98980CF738B0B235BA39AED /* Build configuration list for PBXNativeTarget "Satin-macOS" */;
+			buildPhases = (
+				5004F2F5CEAF86CBB32AF5E79335D9C2 /* Headers */,
+				5770F9FF025582D478D8BFCF5978200E /* Sources */,
+				641D2DCF85D6363CC17CAE8EEFD23525 /* Frameworks */,
+				45A95B2564C0F0182D8F8B34632713E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Satin-macOS";
+			productName = "Satin-macOS";
+			productReference = 0EFA28CE49BE40056A295D0D7487F55E /* Satin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		572B4C82880E17E0058035762899145C /* Pods-SatinSpirit (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67415502E6C4571F93F92E521BEFE59B /* Build configuration list for PBXNativeTarget "Pods-SatinSpirit (iOS)" */;
+			buildPhases = (
+				D48F86735A671E164DDE42DCC2489D49 /* Headers */,
+				C32525D2C4D64300895FC6659DD2E9DE /* Sources */,
+				6B2CB51ADD345F61A56CED4D2F045555 /* Frameworks */,
+				0FAFFB2D939AFF3AC85917F627B68A56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9564AE7ED96C21227ACD22F38B2282FC /* PBXTargetDependency */,
+				E9A562738BB820787A8E4FEF2455242F /* PBXTargetDependency */,
+			);
+			name = "Pods-SatinSpirit (iOS)";
+			productName = "Pods-SatinSpirit (iOS)";
+			productReference = E5EB2471FA6E6417DF183E8DD3D1C6A0 /* Pods_SatinSpirit__iOS_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0AE70AD20164AB7D147EFD0C4379392 /* Forge-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16DA8B21DB0562013C3A20543E65D83 /* Build configuration list for PBXNativeTarget "Forge-macOS" */;
+			buildPhases = (
+				5E10A19E214E7486222971B3E3C49DA5 /* Headers */,
+				51F3A6ABB07891539005A7191A093F6D /* Sources */,
+				997EEF2DEC05F747276E56DF4514AB73 /* Frameworks */,
+				4F3BEE2B0B180F470C4AFBE3BB6DD7CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Forge-macOS";
+			productName = "Forge-macOS";
+			productReference = 63A4A2687D6953711D826F055C3F0896 /* Forge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8BC35345D9D80F990AAF2987B245584 /* Pods-SatinSpirit (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A948030F37401B19FD662D79626A98 /* Build configuration list for PBXNativeTarget "Pods-SatinSpirit (macOS)" */;
+			buildPhases = (
+				CBB5E647845102438DAF1A6C1DB786A5 /* Headers */,
+				E5AC90FE7DDAC36F7E780A1C93E5586B /* Sources */,
+				F7AB51E1C10DE98B989EA4D99D70102C /* Frameworks */,
+				EBC5AE360FC94449086E443A3D0F8264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88F4CA9F7BE9ADDD6EE2657A8C2CD311 /* PBXTargetDependency */,
+				02A345F0A13B3E4564A5C58D0F4F51AA /* PBXTargetDependency */,
+			);
+			name = "Pods-SatinSpirit (macOS)";
+			productName = "Pods-SatinSpirit (macOS)";
+			productReference = 03B1217F8F0F4D5DC07773E874CF4F71 /* Pods_SatinSpirit__macOS_.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA0C59D839DA3E670EADF06A4DF88586 /* Satin-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08001C1BDC93746D4FCCC885167CFC8C /* Build configuration list for PBXNativeTarget "Satin-iOS" */;
+			buildPhases = (
+				FE74D13291D901B0DB46C06107B222E5 /* Headers */,
+				6536A02332B1535650A5E0CA1C6BD90F /* Sources */,
+				7BA9C8793382C5265441D315B785C149 /* Frameworks */,
+				BF5B0EC287FE0FF2B97750E8C4564D7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Satin-iOS";
+			productName = "Satin-iOS";
+			productReference = BADE215B103F7254A5EB0264ABB6FC00 /* Satin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 73377C2C645E83CC05207FD3E6464074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				259CA504A77E7F7838AB708EA721FBF4 /* Forge-iOS */,
+				A0AE70AD20164AB7D147EFD0C4379392 /* Forge-macOS */,
+				572B4C82880E17E0058035762899145C /* Pods-SatinSpirit (iOS) */,
+				D8BC35345D9D80F990AAF2987B245584 /* Pods-SatinSpirit (macOS) */,
+				FA0C59D839DA3E670EADF06A4DF88586 /* Satin-iOS */,
+				4726CE7FEC99998105B5D295821647AE /* Satin-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FAFFB2D939AFF3AC85917F627B68A56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427ADE1269032D97D8572D4F9C3F4F4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E3EEC589D49E31A83A40AD88820B40 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A95B2564C0F0182D8F8B34632713E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED7AC26B3DBDC45166E90BEEAB66C24 /* Pipelines in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F3BEE2B0B180F470C4AFBE3BB6DD7CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A830717720E871A2EDD34DF224827DAC /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5B0EC287FE0FF2B97750E8C4564D7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3880E04DCFCEB409B456437B6369479 /* Pipelines in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC5AE360FC94449086E443A3D0F8264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51F3A6ABB07891539005A7191A093F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41DBA48D22BA7DF137A79371071AFD92 /* Forge-macOS-dummy.m in Sources */,
+				38C8817BD6D0015875E3124B4FF04435 /* ForgeView.swift in Sources */,
+				0E9A692C5D37B52054F328469ED0F8E2 /* Renderer.swift in Sources */,
+				A31958B0CC909738DFF3BCA617048076 /* View.swift in Sources */,
+				BF8EEDA6CEC1904AFE14A0C3EB4F81B7 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5770F9FF025582D478D8BFCF5978200E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7F5F18004F66AC5E5179DA638B749D /* AnyParameter.swift in Sources */,
+				DAA73442A5F1E22BF2EC832B6333394E /* ArcGeometry.swift in Sources */,
+				9AA405B39833A0F430E5CD070CDAA890 /* BasicColorMaterial.swift in Sources */,
+				772770967C64EA55A834EE1301D321C3 /* BasicDiffuseMaterial.swift in Sources */,
+				52A4A8824024C9F0F641A6E0568E58D1 /* BasicPointMaterial.swift in Sources */,
+				769E6D310542C2236B120A4FF3F1E3B6 /* BasicTextureMaterial.swift in Sources */,
+				613342F70CBC187FE248C322D45C65C8 /* Bezier.c in Sources */,
+				6B72BB2F03692111575F5AF509FB8568 /* BoolParameter.swift in Sources */,
+				F611B9F66B78F0C4E77214EE777471A1 /* Bounds.c in Sources */,
+				D83D293D7D120CF652CABC9E6A1BBBCE /* BoxGeometry.swift in Sources */,
+				9C1E3981E8026C49D6868EE584F51AB8 /* Buffer.swift in Sources */,
+				00748627AABA52A9EDA52125EBDF29A0 /* BufferComputeSystem.swift in Sources */,
+				4B6915674A1EE44971E0142EDF38F556 /* Bundle+Extensions.swift in Sources */,
+				330D5BB0DA4EC3EEB69752A7508CF4CA /* Camera.swift in Sources */,
+				C18C92849A5147BE41A890229E36818A /* CameraController.swift in Sources */,
+				49960DBA71115FEDFE88BC3604D67E03 /* CapsuleGeometry.swift in Sources */,
+				01479C81737103779716F1F8BE8B50E6 /* CircleGeometry.swift in Sources */,
+				68097A8B5EB6C77F4A9E3D44CB0ADEDB /* ConeGeometry.swift in Sources */,
+				0827A92D032627C313A9FDC800A9D343 /* Constants.swift in Sources */,
+				6DACC3D7BD0B2C279EBFECEC3F9376F3 /* Context.swift in Sources */,
+				613E429AB21BA13938A650B6F5683EF4 /* CylinderGeometry.swift in Sources */,
+				B7D9C02795B701C6F2AF231D3401A45E /* DepthMaterial.swift in Sources */,
+				CE6724181771DD1B4F276CBA2BDF1A4C /* DoubleParameter.swift in Sources */,
+				F78FE35B439B578601BFDCADD35E34C3 /* ExtrudedRoundedRectGeometry.swift in Sources */,
+				65278305D5376525C7246C375139485E /* ExtrudedTextGeometry.swift in Sources */,
+				F829FC4C7E63BBCE729749A63CB46DBC /* FileParameter.swift in Sources */,
+				28B4DEC67CAD48EB5C593F3D023B3EE5 /* FileWatcher.swift in Sources */,
+				6B3145FF393FDFB946D5CF26ADBB6C4B /* Float2Parameter.swift in Sources */,
+				DB2782F1D13BB355974EF7B505E16B75 /* Float3Parameter.swift in Sources */,
+				1A195CAB516BD42A6944EA2FF5D768BE /* Float4Parameter.swift in Sources */,
+				46B2C4D4F7ABE175340F027B4A8CED7D /* FloatParameter.swift in Sources */,
+				CBF0D4862C8D825BB9B1336C56C25BD1 /* FPSCameraController.swift in Sources */,
+				60F998642AD773838AE2D4C1AB988BF6 /* Generators.c in Sources */,
+				01888CA659ADB1AA8ED19A13B24E3BC2 /* Geometry.c in Sources */,
+				A6ABD2DA77AF6DFE18095EABD397E358 /* Geometry.swift in Sources */,
+				D9320869AA47FC90F26E6E7D8BAC6528 /* GesturalCameraController.swift in Sources */,
+				3432BC551123472182260217B2FD26FB /* Helpers.swift in Sources */,
+				273722BF6A556F54BEF5B3B75B15EABA /* IcoSphereGeometry.swift in Sources */,
+				421E788CFBD758E6EE94D3F3EA1E4DD2 /* Int2Parameter.swift in Sources */,
+				3DD40C5CFD410DDE9BB6A177E5C31479 /* Int3Parameter.swift in Sources */,
+				A94A8307AA29E446C086BC204C6294C6 /* Int4Parameter.swift in Sources */,
+				CCA5EE037C9CB45747DB122C5DECF5A9 /* IntParameter.swift in Sources */,
+				F414FEE332FF71131C0411707CE65EA8 /* LiveMaterial.swift in Sources */,
+				79EE25AA9EA59315B0C3465F4B80DDB9 /* MatCapMaterial.swift in Sources */,
+				1DCCF3A7B140CD49DF015EECC9C2ECA3 /* Material.swift in Sources */,
+				602180C70176A94324A4CDC1609B7F49 /* Math.swift in Sources */,
+				A9D52298A5D509028613570783363B23 /* Mesh.swift in Sources */,
+				C40A1FC33336E10C756AD950E5B042E8 /* MetalFileCompiler.swift in Sources */,
+				C0603BB73CD25AE8AAC92B18820D173A /* MultipleTextureComputeSystem.swift in Sources */,
+				304C2CAAE12EFF876F55C392A7EA2093 /* NormalColorMaterial.swift in Sources */,
+				A17A316535A2AD3FE653D9AF46EEF9A1 /* Object.swift in Sources */,
+				E032847253C5C52E8FEE17A868B44CF4 /* OrthographicCamera.swift in Sources */,
+				85533B5E0864A55B6A0548A9FE844705 /* OrthographicCameraController.swift in Sources */,
+				7D89EA28A6BD4F9230CF456DE2746042 /* PackedFloat3Parameter.swift in Sources */,
+				9317F718B6470FFFD9C39EB4DAD42E51 /* Parameter.swift in Sources */,
+				C48C0F5D3C302AFF39EC606F7B99C92C /* ParameterGroup.swift in Sources */,
+				61715C59787007A0660CD77A2C2E532D /* ParameterParser.swift in Sources */,
+				413BF0491C9E7BAD04CB1778E44E1850 /* ParametricGeometry.swift in Sources */,
+				50B2D3B92FFD94651F5D6400793FAEEF /* Paths.swift in Sources */,
+				AB3D285E22801A93209FA92D7D2FF71A /* PerspectiveCamera.swift in Sources */,
+				3B7105AFB00EFE9B273D3700736345D8 /* PerspectiveCameraController.swift in Sources */,
+				7552D1A0942AC2C5816C10C18D5795FB /* Pipelines.swift in Sources */,
+				A0ADB2E8B328F8F1C593656061923BF1 /* PlaneGeometry.swift in Sources */,
+				913367806DE9028D04C8D9D1DEB0CE3C /* PointGeometry.swift in Sources */,
+				51DA9C26C264815AF5D7E8558F3CE0A8 /* PostProcessor.swift in Sources */,
+				E0A4DA105032BF7C8F10CFC77951BE30 /* QuadGeometry.swift in Sources */,
+				2E1159BF153CC1307AF3DB7267C1D864 /* Ray.swift in Sources */,
+				44EA4DF3CAD3C65EBBB348B496F94698 /* Raycaster.swift in Sources */,
+				9A6C767512262FC04502D762740CF41D /* Renderer.swift in Sources */,
+				D2B47F7C811DDA3B8BDE46ACD047A03E /* RoundedRectGeometry.swift in Sources */,
+				1033D8AEC3FD5DCDE1F9B4B895702D9B /* Satin-macOS-dummy.m in Sources */,
+				E6F295E65E655AE97C81083553F2D842 /* Simd+Extensions.swift in Sources */,
+				033D564CA9E081A1852BB305772DB609 /* SkyboxGeometry.swift in Sources */,
+				37732C06D80DD2C1A9034D3350C1B839 /* SkyboxMaterial.swift in Sources */,
+				ADF95E26B5233A64B61AD9AA857B4E6E /* SphereGeometry.swift in Sources */,
+				C1ABD190696ADF6FBBA54FE9871DF8AB /* SquircleGeometry.swift in Sources */,
+				DD270AD33204A3076549CF9F83C6314F /* String+Extensions.swift in Sources */,
+				31E41BA6DFB36DD774E592D7FDDE2BB3 /* StringParameter.swift in Sources */,
+				BDE20565ED13AF7605A48E3FCF9A8B92 /* Submesh.swift in Sources */,
+				C699638BE4746EEE178BFC806C757490 /* TextGeometry.swift in Sources */,
+				11D5D519BC788B2681BEFCFBBE0EBD8A /* TextureComputeSystem.swift in Sources */,
+				32352B5F3A0395C7EE7E09D28A332598 /* Textures.swift in Sources */,
+				905EAD6408AC0D592D81FEC2687A5468 /* TorusGeometry.swift in Sources */,
+				2D072142878FCD033A1B849F42AB7297 /* TriangleGeometry.swift in Sources */,
+				8F33971C285BD4073BCB4D95CA48B004 /* Triangulator.c in Sources */,
+				135B1C2A93A382BC7C3BAFE4BCD21E2A /* Types.c in Sources */,
+				3A0F9896DAB72E7A8EEB10E8FF6BE1A8 /* UInt32Parameter.swift in Sources */,
+				BFD8ACD6D6B93019053900B789A396B5 /* UniformBuffer.swift in Sources */,
+				A8698506B7948384EB0CD015E424736C /* UVColorMaterial.swift in Sources */,
+				DD11AC75B6058F7140A911EA983D17DC /* Vertex.swift in Sources */,
+				F4C7BBDB671CA0F5A1381BA76525AF62 /* VertexDescriptors.swift in Sources */,
+				FCC40CF89F5F3F6D4B5D1FB5075ABF8B /* VertexUniforms.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6536A02332B1535650A5E0CA1C6BD90F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CFDDA338FC1B2AC2813D5979C31642 /* AnyParameter.swift in Sources */,
+				C7677772D1397C9D8932672DA7863047 /* ArcGeometry.swift in Sources */,
+				A53618AFB9CBAB87A3F40310E1026C26 /* BasicColorMaterial.swift in Sources */,
+				B293FAA69EB36E5638FDC15AD1F3D75D /* BasicDiffuseMaterial.swift in Sources */,
+				2E02380279B8510E3F8A3F36FE19766E /* BasicPointMaterial.swift in Sources */,
+				CFB2A617AA6321929EDAA3C9BA2CBD2B /* BasicTextureMaterial.swift in Sources */,
+				304E39CD2B1F220081B23EAB1DC38BE9 /* Bezier.c in Sources */,
+				BF3119FC22F29901BD95E4CD8DCAD10C /* BoolParameter.swift in Sources */,
+				6031E78BD3D0CB12C90835A147CEA6B5 /* Bounds.c in Sources */,
+				86EE341C53CD9DA3FDD6B5B13AFDF917 /* BoxGeometry.swift in Sources */,
+				F025B090C473F8CEA6D6009C84E98184 /* Buffer.swift in Sources */,
+				538B37086821BED8E162D118BAFDC8A5 /* BufferComputeSystem.swift in Sources */,
+				F20187D9AA6E57CC9DA8DA464F30B4D2 /* Bundle+Extensions.swift in Sources */,
+				C38264DFAFAC05C6D7E77A6EA4EA671A /* Camera.swift in Sources */,
+				27473941CE72483C5A743D594B36C04D /* CameraController.swift in Sources */,
+				3CC64856A19259E2357B2DFAC4827108 /* CapsuleGeometry.swift in Sources */,
+				90A27C75DCF745E61D2A1E49AEB6B74F /* CircleGeometry.swift in Sources */,
+				710EE5F56267FC6CC980BFF84110E57A /* ConeGeometry.swift in Sources */,
+				1C88E0D1EAE1C9C70C23CA0FA4EE93D3 /* Constants.swift in Sources */,
+				C3E21B151C9E65D88E2B1C7714AA81D9 /* Context.swift in Sources */,
+				65C984B018EEAF2E32CE756AD2729D07 /* CylinderGeometry.swift in Sources */,
+				6BF40D8DD1E1231EC5700359DA791FE2 /* DepthMaterial.swift in Sources */,
+				BD879D37D4E298D095F8759C6290CA7A /* DoubleParameter.swift in Sources */,
+				DE41EC58538FCBCCE3E6B82917A4459D /* ExtrudedRoundedRectGeometry.swift in Sources */,
+				B2217AAA53EEA58E31E6B517EE886206 /* ExtrudedTextGeometry.swift in Sources */,
+				24B78CA4260A1F8D3056C00F0D9317C2 /* FileParameter.swift in Sources */,
+				DDFFB7215872D77B0F3B23C9A9FA442E /* FileWatcher.swift in Sources */,
+				99174896BE561D8AD03A936002EBD139 /* Float2Parameter.swift in Sources */,
+				AB102D589580277BA8120E5366D190FF /* Float3Parameter.swift in Sources */,
+				82E1EB4C40A43D641B0B1AC3A899E6EE /* Float4Parameter.swift in Sources */,
+				3FB466B520E31E06EDB00F33D3600719 /* FloatParameter.swift in Sources */,
+				CCA7E98422C7DB70EF0AEE78D84AB0A8 /* FPSCameraController.swift in Sources */,
+				220DF48B7DB46674E76B53CA354CA98F /* Generators.c in Sources */,
+				200C5E8864E020B59637B2B1B354E7AD /* Geometry.c in Sources */,
+				690A50C6C2EDD7957AAC1B6CF63B7521 /* Geometry.swift in Sources */,
+				531FA784DA56EDDDFA9B4FB6573D1BF7 /* GesturalCameraController.swift in Sources */,
+				4850EED0EAADFE8A7922E8540C8B9FF4 /* Helpers.swift in Sources */,
+				CEF87A9D2875AA1B8F8AA217629D3678 /* IcoSphereGeometry.swift in Sources */,
+				6EED07E0C82AA732C0D4D1DB1CBB7DAA /* Int2Parameter.swift in Sources */,
+				82EAF970B2DEE0E49BB0C7901A0D87F5 /* Int3Parameter.swift in Sources */,
+				E64AFB9072E755F69B139E6A522C84A9 /* Int4Parameter.swift in Sources */,
+				2087A678D63ACFD0127A22782EF7417B /* IntParameter.swift in Sources */,
+				3148BB73E600EA59AAED62905F0F077C /* LiveMaterial.swift in Sources */,
+				7331AB8FF3B2B1173A2D878D95CC2C30 /* MatCapMaterial.swift in Sources */,
+				0069F13CADB7F137A087F914D4B2218B /* Material.swift in Sources */,
+				8959BE62BC37BA83D19385B63DB28DC5 /* Math.swift in Sources */,
+				A9305BE12B285379FB9E31714C977597 /* Mesh.swift in Sources */,
+				7FFF72FC19C5E78342131BE5E7737458 /* MetalFileCompiler.swift in Sources */,
+				6CBCF07D2BD60DD6BBF7104106F59CA5 /* MultipleTextureComputeSystem.swift in Sources */,
+				F8B3D9292B89897E440256E582EACDDA /* NormalColorMaterial.swift in Sources */,
+				123ACFA6D97E9AE755B42DA6FAF149FB /* Object.swift in Sources */,
+				9FDCDFE9F4F33D991A57D6E4D2856B9A /* OrthographicCamera.swift in Sources */,
+				D894FF5A1BBBA25BED4FB0AE2988488D /* OrthographicCameraController.swift in Sources */,
+				606E7A80EE6802F8DD52611AB3B63B30 /* PackedFloat3Parameter.swift in Sources */,
+				BC2B583F26994744DB786153E764C3CB /* Parameter.swift in Sources */,
+				224387B16886D90BE527CFC67EF00639 /* ParameterGroup.swift in Sources */,
+				6C4CEE02E6DF6D1381BC553FB3296541 /* ParameterParser.swift in Sources */,
+				2D6B53BF8DDF0363925AC14C5EF3FC8A /* ParametricGeometry.swift in Sources */,
+				8571545F99E2BF24DD2A17739DD61B21 /* Paths.swift in Sources */,
+				C69D0E2973E2FFF2F089BE26D3348198 /* PerspectiveCamera.swift in Sources */,
+				B82CB378080D9F169EC9BCFBD6147357 /* PerspectiveCameraController.swift in Sources */,
+				60BA01A05B344D7FBBDBD0197F724E49 /* Pipelines.swift in Sources */,
+				45EED0085006C2D83EB0C627D6AD0DA6 /* PlaneGeometry.swift in Sources */,
+				AF98F3AAE7B56A056BCE5BC1F10B8301 /* PointGeometry.swift in Sources */,
+				3A155D5CB2620922CE7893E1588A315E /* PostProcessor.swift in Sources */,
+				ACF5BDE590D6C3F510AD90176F9EC00A /* QuadGeometry.swift in Sources */,
+				E0267C33FB7C2D650CB83075AAD33D10 /* Ray.swift in Sources */,
+				1836983FE1D74F2E416382DCA93A8E6A /* Raycaster.swift in Sources */,
+				C10DECAC793557C450714F3D3DF7AA22 /* Renderer.swift in Sources */,
+				6A2F91A037E98CEF48CF3B892048BBAB /* RoundedRectGeometry.swift in Sources */,
+				C0CE477944AB7E8BE8A80346FD0CCBCD /* Satin-iOS-dummy.m in Sources */,
+				535D925EAB3D8889836CA2FBB1BAACF7 /* Simd+Extensions.swift in Sources */,
+				DA10B4CB2926CAD1EF4D1E5C9FEADF4D /* SkyboxGeometry.swift in Sources */,
+				BEEA6C0EAA8EDD490AD4B05C81E24C78 /* SkyboxMaterial.swift in Sources */,
+				B7E3A14B895EA563B06DE23F55D296F5 /* SphereGeometry.swift in Sources */,
+				5A31290584DA46E73112A6B3693B60C1 /* SquircleGeometry.swift in Sources */,
+				2E8DF598035FC526F97D58CACACF98FF /* String+Extensions.swift in Sources */,
+				B7B247016B6D2D0E00723CD45F02123F /* StringParameter.swift in Sources */,
+				B74CAD59C8144A4E4AA0955134B18347 /* Submesh.swift in Sources */,
+				FF6FF994B85B899BBF31B0DC377F3317 /* TextGeometry.swift in Sources */,
+				C06E9DE000FBE39299C5D25802A67BED /* TextureComputeSystem.swift in Sources */,
+				1DAF134F4A62275CA0D1B34A0584496A /* Textures.swift in Sources */,
+				645F81BD212715315E491DFC75BF1794 /* TorusGeometry.swift in Sources */,
+				6795297DBD3122E47EBA338B2D61D0CB /* TriangleGeometry.swift in Sources */,
+				3A7925E4288851ACFA0BBAE20EEA9364 /* Triangulator.c in Sources */,
+				681952C206C188101E9DC7C61B219079 /* Types.c in Sources */,
+				620D49C0B042F0E888EED9751509817E /* UInt32Parameter.swift in Sources */,
+				A6D1C943DB5B3E69153407CCC3C4968A /* UniformBuffer.swift in Sources */,
+				7F96706E6805E71E5CC88F6C08DE47B5 /* UVColorMaterial.swift in Sources */,
+				D6FE4866A03675FC158711B56BDBBBB7 /* Vertex.swift in Sources */,
+				8FD23EEB9837910F40E6C81B97DBD342 /* VertexDescriptors.swift in Sources */,
+				ADB5B998B2BD56CAA51A60131FA4984E /* VertexUniforms.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		863FFAACB6E81FEED8F4D2684DE4192C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A36E255A03F2DF454D9D604EBD9406 /* Forge-iOS-dummy.m in Sources */,
+				D9FA950555169E826C05D228C908B824 /* ForgeView.swift in Sources */,
+				B2CAE701B32FF1BA88C810B87946B4B3 /* Renderer.swift in Sources */,
+				5880A68C20F2C26B7ABE384C1EB97762 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32525D2C4D64300895FC6659DD2E9DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417C47684CC6A7D403C8AD18573B82E /* Pods-SatinSpirit (iOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AC90FE7DDAC36F7E780A1C93E5586B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85091544D70EECAF462AA41F8A7A8255 /* Pods-SatinSpirit (macOS)-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02A345F0A13B3E4564A5C58D0F4F51AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Satin-macOS";
+			target = 4726CE7FEC99998105B5D295821647AE /* Satin-macOS */;
+			targetProxy = AD0DB3888B35AD27F75C612E15E271CF /* PBXContainerItemProxy */;
+		};
+		88F4CA9F7BE9ADDD6EE2657A8C2CD311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Forge-macOS";
+			target = A0AE70AD20164AB7D147EFD0C4379392 /* Forge-macOS */;
+			targetProxy = A63B9554093D3E90C3FEFBE75EAC9EAF /* PBXContainerItemProxy */;
+		};
+		9564AE7ED96C21227ACD22F38B2282FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Forge-iOS";
+			target = 259CA504A77E7F7838AB708EA721FBF4 /* Forge-iOS */;
+			targetProxy = 7401B887EDCC36B8936E2CDF1444F1E8 /* PBXContainerItemProxy */;
+		};
+		E9A562738BB820787A8E4FEF2455242F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Satin-iOS";
+			target = FA0C59D839DA3E670EADF06A4DF88586 /* Satin-iOS */;
+			targetProxy = 350AA93AD981C77E71140C5E4FD06ADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04F7668CF69E389DB60A6BAECDF624AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CAD1FFA971E9C16BCBD2027F49C0D6 /* Satin-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Satin-macOS/Satin-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Satin-macOS/Satin-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Satin-macOS/Satin-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Satin;
+				PRODUCT_NAME = Satin;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39A478A2F8AA374D633329CE100150EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4C46754B2BBE11EFDB67A81F6F981526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9A96E37A8CAB992E49E7B5F36758D5 /* Forge-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Forge-iOS/Forge-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Forge-iOS/Forge-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Forge-iOS/Forge-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Forge;
+				PRODUCT_NAME = Forge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A96DA52ABD851332CD0D28F77A1CE83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D949F26120C5F3B971BD1F87E3DC786 /* Pods-SatinSpirit (iOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SatinSpirit (iOS)/Pods-SatinSpirit (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SatinSpirit (iOS)/Pods-SatinSpirit (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79E63CA5628FEDD8BCC99884467611CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		892D87950E686C902D46BC4465635E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C7817AA42939A8B80E3642617B2BB2 /* Satin-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Satin-iOS/Satin-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Satin-iOS/Satin-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Satin-iOS/Satin-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Satin;
+				PRODUCT_NAME = Satin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95919F7D599746CBFF4AE8641842B98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7EE93C0ADFECE56A9ACF32243EED39 /* Pods-SatinSpirit (iOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SatinSpirit (iOS)/Pods-SatinSpirit (iOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SatinSpirit (iOS)/Pods-SatinSpirit (iOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B8523E8A3FA90EE7EA5E44FDDD0A2F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C62EBA3513AC689402FB3209959A96 /* Pods-SatinSpirit (macOS).debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SatinSpirit (macOS)/Pods-SatinSpirit (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-SatinSpirit (macOS)/Pods-SatinSpirit (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1A0138687FDD4A33799E91B37F09547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF9D447ACAE65114000760DEDDC3C39 /* Satin-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Satin-iOS/Satin-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Satin-iOS/Satin-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Satin-iOS/Satin-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Satin;
+				PRODUCT_NAME = Satin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5B8B1E44A4A4702D17D62B7D72B7A98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AAE4BDFED8889F1CE590A23BF154D7 /* Forge-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Forge-macOS/Forge-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Forge-macOS/Forge-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Forge-macOS/Forge-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Forge;
+				PRODUCT_NAME = Forge;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6366F8AC734B59FEAA2DD72E27F1E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 710F2B28696FFB1200344BA8B53F59AD /* Pods-SatinSpirit (macOS).release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SatinSpirit (macOS)/Pods-SatinSpirit (macOS)-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-SatinSpirit (macOS)/Pods-SatinSpirit (macOS).modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF3B29999A6F34C35B0DF4E89423624B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD5A2CD25646400C16CF95A72BCD99D /* Satin-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Satin-macOS/Satin-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Satin-macOS/Satin-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Satin-macOS/Satin-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Satin;
+				PRODUCT_NAME = Satin;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1B0BCC6BD1F2D805E11B7F4C49DDD42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4A61DF06E503525C71C6F4244D1C7C /* Forge-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Forge-iOS/Forge-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Forge-iOS/Forge-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Forge-iOS/Forge-iOS.modulemap";
+				PRODUCT_MODULE_NAME = Forge;
+				PRODUCT_NAME = Forge;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2B54034EFBEC0DE999BDF597B6BE725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 456EDF0E402F20ADE98E0BCA4816EA3D /* Forge-macOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Forge-macOS/Forge-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Forge-macOS/Forge-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Forge-macOS/Forge-macOS.modulemap";
+				PRODUCT_MODULE_NAME = Forge;
+				PRODUCT_NAME = Forge;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08001C1BDC93746D4FCCC885167CFC8C /* Build configuration list for PBXNativeTarget "Satin-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892D87950E686C902D46BC4465635E29 /* Debug */,
+				A1A0138687FDD4A33799E91B37F09547 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A478A2F8AA374D633329CE100150EB /* Debug */,
+				79E63CA5628FEDD8BCC99884467611CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F2EC8DC45082C38F191137F5CB4EBA6 /* Build configuration list for PBXNativeTarget "Forge-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C46754B2BBE11EFDB67A81F6F981526 /* Debug */,
+				E1B0BCC6BD1F2D805E11B7F4C49DDD42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67415502E6C4571F93F92E521BEFE59B /* Build configuration list for PBXNativeTarget "Pods-SatinSpirit (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A96DA52ABD851332CD0D28F77A1CE83 /* Debug */,
+				95919F7D599746CBFF4AE8641842B98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A948030F37401B19FD662D79626A98 /* Build configuration list for PBXNativeTarget "Pods-SatinSpirit (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B8523E8A3FA90EE7EA5E44FDDD0A2F0 /* Debug */,
+				D6366F8AC734B59FEAA2DD72E27F1E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16DA8B21DB0562013C3A20543E65D83 /* Build configuration list for PBXNativeTarget "Forge-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B8B1E44A4A4702D17D62B7D72B7A98 /* Debug */,
+				E2B54034EFBEC0DE999BDF597B6BE725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B93898C98980CF738B0B235BA39AED /* Build configuration list for PBXNativeTarget "Satin-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF3B29999A6F34C35B0DF4E89423624B /* Debug */,
+				04F7668CF69E389DB60A6BAECDF624AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

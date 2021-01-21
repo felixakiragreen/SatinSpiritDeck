@@ -1,0 +1,6 @@
+framework module Satin {
+  umbrella header "Satin-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

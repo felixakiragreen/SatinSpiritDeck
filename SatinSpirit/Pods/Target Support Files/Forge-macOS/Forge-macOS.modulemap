@@ -1,0 +1,6 @@
+framework module Forge {
+  umbrella header "Forge-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

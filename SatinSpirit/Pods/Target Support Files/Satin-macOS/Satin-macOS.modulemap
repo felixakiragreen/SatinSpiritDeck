@@ -1,0 +1,6 @@
+framework module Satin {
+  umbrella header "Satin-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
