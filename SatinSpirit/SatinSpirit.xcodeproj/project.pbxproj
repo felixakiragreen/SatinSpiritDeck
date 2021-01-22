@@ -17,6 +17,12 @@
 		1D6D789525B9144E00C92BDD /* Card_00_Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D789325B9144E00C92BDD /* Card_00_Void.swift */; };
 		1D6D78A325B9153200C92BDD /* Renderer_00_Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78A225B9153200C92BDD /* Renderer_00_Void.swift */; };
 		1D6D78A425B9153200C92BDD /* Renderer_00_Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78A225B9153200C92BDD /* Renderer_00_Void.swift */; };
+		1D6D78B525B9D5E700C92BDD /* Card_01_Justice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78B425B9D5E700C92BDD /* Card_01_Justice.swift */; };
+		1D6D78B625B9D5E700C92BDD /* Card_01_Justice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78B425B9D5E700C92BDD /* Card_01_Justice.swift */; };
+		1D6D78BA25B9D5FF00C92BDD /* Renderer_01_Justice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78B925B9D5FF00C92BDD /* Renderer_01_Justice.swift */; };
+		1D6D78BB25B9D5FF00C92BDD /* Renderer_01_Justice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78B925B9D5FF00C92BDD /* Renderer_01_Justice.swift */; };
+		1D6D78C025B9D62100C92BDD /* Justice.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78BF25B9D62100C92BDD /* Justice.metal */; };
+		1D6D78C125B9D62100C92BDD /* Justice.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D6D78BF25B9D62100C92BDD /* Justice.metal */; };
 		58B845D2E23E55CDC532E904 /* Pods_SatinSpirit__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86708764642E908639634D8D /* Pods_SatinSpirit__macOS_.framework */; };
 		C8757B74F9C32EAA31BB724D /* Pods_SatinSpirit__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0B45710E53DAC293F657C3 /* Pods_SatinSpirit__iOS_.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +39,9 @@
 		1D6D787025B912AC00C92BDD /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1D6D789325B9144E00C92BDD /* Card_00_Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_00_Void.swift; sourceTree = "<group>"; };
 		1D6D78A225B9153200C92BDD /* Renderer_00_Void.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer_00_Void.swift; sourceTree = "<group>"; };
+		1D6D78B425B9D5E700C92BDD /* Card_01_Justice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card_01_Justice.swift; sourceTree = "<group>"; };
+		1D6D78B925B9D5FF00C92BDD /* Renderer_01_Justice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer_01_Justice.swift; sourceTree = "<group>"; };
+		1D6D78BF25B9D62100C92BDD /* Justice.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Justice.metal; sourceTree = "<group>"; };
 		456CDB41EBD4FDC44C4BBA3C /* Pods-SatinSpirit (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SatinSpirit (macOS).debug.xcconfig"; path = "Target Support Files/Pods-SatinSpirit (macOS)/Pods-SatinSpirit (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		536941BEA099FB103B6E8FAA /* Pods-SatinSpirit (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SatinSpirit (macOS).release.xcconfig"; path = "Target Support Files/Pods-SatinSpirit (macOS)/Pods-SatinSpirit (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		86708764642E908639634D8D /* Pods_SatinSpirit__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SatinSpirit__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +87,8 @@
 				1D6D785E25B912AA00C92BDD /* SatinSpiritApp.swift */,
 				1D6D785F25B912AA00C92BDD /* ContentView.swift */,
 				1D6D786025B912AC00C92BDD /* Assets.xcassets */,
-				1D6D789325B9144E00C92BDD /* Card_00_Void.swift */,
-				1D6D78A225B9153200C92BDD /* Renderer_00_Void.swift */,
+				1D6D78B125B9D5D200C92BDD /* 00_Void */,
+				1D6D78BE25B9D60300C92BDD /* 01_Justice */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -108,6 +117,33 @@
 				1D6D787025B912AC00C92BDD /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		1D6D78B125B9D5D200C92BDD /* 00_Void */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D789325B9144E00C92BDD /* Card_00_Void.swift */,
+				1D6D78A225B9153200C92BDD /* Renderer_00_Void.swift */,
+			);
+			path = 00_Void;
+			sourceTree = "<group>";
+		};
+		1D6D78BE25B9D60300C92BDD /* 01_Justice */ = {
+			isa = PBXGroup;
+			children = (
+				1D6D78B425B9D5E700C92BDD /* Card_01_Justice.swift */,
+				1D6D78B925B9D5FF00C92BDD /* Renderer_01_Justice.swift */,
+				1D6D78BF25B9D62100C92BDD /* Justice.metal */,
+				1D6D78C625B9E41800C92BDD /* Assets */,
+			);
+			path = 01_Justice;
+			sourceTree = "<group>";
+		};
+		1D6D78C625B9E41800C92BDD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		698C7A68B9C94AAAF7DB5FBC /* Pods */ = {
@@ -314,6 +350,9 @@
 			files = (
 				1D6D78A325B9153200C92BDD /* Renderer_00_Void.swift in Sources */,
 				1D6D787325B912AC00C92BDD /* ContentView.swift in Sources */,
+				1D6D78C025B9D62100C92BDD /* Justice.metal in Sources */,
+				1D6D78B525B9D5E700C92BDD /* Card_01_Justice.swift in Sources */,
+				1D6D78BA25B9D5FF00C92BDD /* Renderer_01_Justice.swift in Sources */,
 				1D6D789425B9144E00C92BDD /* Card_00_Void.swift in Sources */,
 				1D6D787125B912AC00C92BDD /* SatinSpiritApp.swift in Sources */,
 			);
@@ -325,6 +364,9 @@
 			files = (
 				1D6D78A425B9153200C92BDD /* Renderer_00_Void.swift in Sources */,
 				1D6D787425B912AC00C92BDD /* ContentView.swift in Sources */,
+				1D6D78C125B9D62100C92BDD /* Justice.metal in Sources */,
+				1D6D78B625B9D5E700C92BDD /* Card_01_Justice.swift in Sources */,
+				1D6D78BB25B9D5FF00C92BDD /* Renderer_01_Justice.swift in Sources */,
 				1D6D789525B9144E00C92BDD /* Card_00_Void.swift in Sources */,
 				1D6D787225B912AC00C92BDD /* SatinSpiritApp.swift in Sources */,
 			);
